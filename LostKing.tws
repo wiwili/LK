@@ -1,0 +1,6489 @@
+(dp0
+S'buildDestination'
+p1
+VC:\u005cUsers\u005cRarris\u005cDesktop\u005ccmpm80k\u005cLost King 2.html
+p2
+sS'saveDestination'
+p3
+S'C:\\Users\\Rarris\\Desktop\\cmpm80k\\LostKing.tws'
+p4
+sS'metadata'
+p5
+(dp6
+sS'target'
+p7
+S'sugarcube-2'
+p8
+sS'storyPanel'
+p9
+(dp10
+S'widgets'
+p11
+(lp12
+(dp13
+S'selected'
+p14
+I00
+sS'pos'
+p15
+(lp16
+F286.9779999999999
+aF960.4380000000008
+asS'passage'
+p17
+(itiddlywiki
+Tiddler
+p18
+(dp20
+S'text'
+p21
+VIt was just a hike like any other. You've hiked up this mountain several times, enough to be quite familiar with its paths. However, on this sunny day you noticed something strange. Amidst the trees, there was an opening along the mountainside.\u000a\u000aThere was actually a cave entrance hidden between foliage. You had never noticed it before since the darkness of the cave entrance was obstructed by the greens.\u000a\u000aYour curiousity beckons you.\u000a\u000a[[Approach the cave|Cave Entrance]]\u000a[[Forget it and continue on|Nope]]\u000a<<nobr>><<audio outside play>><</nobr>>
+p22
+sS'title'
+p23
+VStart
+p24
+sS'modified'
+p25
+ctime
+struct_time
+p26
+((I2017
+I3
+I11
+I12
+I10
+I38
+I5
+I70
+I0
+tp27
+(dp28
+tp29
+Rp30
+sS'tags'
+p31
+(lp32
+sS'created'
+p33
+g26
+((I2017
+I1
+I28
+I11
+I36
+I17
+I5
+I28
+I0
+tp34
+(dp35
+tp36
+Rp37
+sbsa(dp38
+g14
+I00
+sg15
+(lp39
+F385.1393333333336
+aF22.679333333333332
+asg17
+(itiddlywiki
+Tiddler
+p40
+(dp41
+g21
+V<<if $finalAnswer is true>>\u000a<a style="color:white" data-passage="Quiz6">Lost King</a> 2<br>Electric Boogaloo\u000a<<else>>\u000aLost King 2<br>Electric Boogaloo\u000a<</if>>\u000a
+p42
+sg23
+VStoryTitle
+p43
+sg25
+g26
+((I2017
+I3
+I14
+I17
+I38
+I8
+I1
+I73
+I1
+tp44
+(dp45
+tp46
+Rp47
+sg31
+(lp48
+Vnobr
+p49
+asg33
+g26
+((I2017
+I1
+I28
+I11
+I36
+I17
+I5
+I28
+I0
+tp50
+(dp51
+tp52
+Rp53
+sbsa(dp54
+g14
+I00
+sg15
+(lp55
+F189.81866666666673
+aF28.717333333333332
+asg17
+(itiddlywiki
+Tiddler
+p56
+(dp57
+g21
+VWilbur Li
+p58
+sg23
+VStoryAuthor
+p59
+sg25
+g26
+((I2017
+I3
+I14
+I22
+I21
+I8
+I1
+I73
+I1
+tp60
+(dp61
+tp62
+Rp63
+sg31
+(lp64
+sg33
+g26
+((I2017
+I1
+I28
+I11
+I36
+I17
+I5
+I28
+I0
+tp65
+(dp66
+tp67
+Rp68
+sbsa(dp69
+g14
+I00
+sg15
+(lp70
+F7.346252312122722
+aF20.320666666666668
+asg17
+(itiddlywiki
+Tiddler
+p71
+(dp72
+g21
+V#health\u000a<<set $health to 10>>\u000a\u000a#backpack\u000a<<set $inv to []>>\u000a	<<set $inv.push("Water Canteen")>>\u000a	<<set $inv.push("Flashlight")>>\u000a\u000a#stones\u000a<<set $hasBird to false>>\u000a<<set $hasDragon to false>>\u000a<<set $hasTurtle to false>>\u000a<<set $hasTiger to false>>\u000a\u000a<<set $hasFakeTiger to false>>\u000a<<set $takenQuiz to false>>\u000a<<set $wrongAnswer to false>>\u000a<<set $ropeGet to false>>\u000a<<set $gotHerb to false>>\u000a<<set $herbArrow to false>>\u000a\u000a<<set $slotN to "Empty">>\u000a<<set $slotS to "Empty">>\u000a<<set $slotE to "Empty">>\u000a<<set $slotW to "Empty">>\u000a\u000a<<script>>Config.history.controls = false<</script>>\u000a\u000a#audio from http://soundbible.com\u000a<<cacheaudio "outside" "Sound/outside.wav">>\u000a<<cacheaudio "cave" "Sound/cave.wav">>\u000a<<cacheaudio "grassSteps" "Sound/grassSteps.wav">>\u000a<<cacheaudio "rocks" "Sound/rocks.wav">>\u000a<<cacheaudio "splash" "Sound/splash.wav">>\u000a<<cacheaudio "gate" "Sound/gate.wav">>\u000a<<cacheaudio "quake" "Sound/quake.wav">>\u000a<<cacheaudio "arrow" "Sound/arrow.wav">>\u000a
+p73
+sg23
+VStoryInit
+p74
+sg25
+g26
+((I2017
+I3
+I17
+I21
+I9
+I32
+I4
+I76
+I1
+tp75
+(dp76
+tp77
+Rp78
+sg31
+(lp79
+sg33
+g26
+((I2017
+I1
+I28
+I11
+I47
+I52
+I5
+I28
+I0
+tp80
+(dp81
+tp82
+Rp83
+sbsa(dp84
+g14
+I00
+sg15
+(lp85
+F7.6540000000000745
+aF186.99999999999997
+asg17
+(itiddlywiki
+Tiddler
+p86
+(dp87
+g21
+V<<link "Inventory">>\u000a	<<script>>\u000a		Dialog.setup("Inventory", "inv");\u000a		Dialog.wiki(Story.get("Inventory").processText());\u000a		Dialog.open();\u000a	<</script>>\u000a<</link>>\u000a\u000a
+p88
+sg23
+VStoryMenu
+p89
+sg25
+g26
+((I2017
+I3
+I11
+I11
+I55
+I59
+I5
+I70
+I0
+tp90
+(dp91
+tp92
+Rp93
+sg31
+(lp94
+sg33
+g26
+((I2017
+I1
+I28
+I11
+I48
+I13
+I5
+I28
+I0
+tp95
+(dp96
+tp97
+Rp98
+sbsa(dp99
+g14
+I00
+sg15
+(lp100
+F10.972542168674732
+aF342.69174768787735
+asg17
+(itiddlywiki
+Tiddler
+p101
+(dp102
+g21
+V<<nobr>>\u000a<<if $inv.indexOf("Herb") gte 0>>\u000a@@color:white;\u000a	<<link "Use Herb">>\u000a		<<script>>\u000a		Dialog.setup("Herb", "herb");\u000a		Dialog.wiki(Story.get("Heal").processText());\u000a		Dialog.open();\u000a		<</script>>\u000a	<</link>>\u000a@@\u000a<</if>>\u000a<</nobr>>\u000a<<nobr>>\u000a<<if $inv.indexOf("Water Canteen") gte 0 and $inv.indexOf("Dirty Stone Plate") gte 0>>\u000a@@color:white;\u000a	<<link "Clean Dirty Stone Plate">><br>\u000a		<<script>>\u000a		Dialog.setup("Water", "water");\u000a		Dialog.wiki(Story.get("CleanTiger").processText());\u000a		Dialog.open();\u000a		<</script>>\u000a	<</link>>\u000a@@\u000a<</if>>\u000a<</nobr>>\u000a@@color:white;\u000a<<nobr>><center>Items</center><</nobr>><hr>\u000a<<for _i to 0; _i lt $inv.length; _i++>>\u000a	<<print [$inv[_i]] >>\u000a<</for>>\u000a\u000a<<link "Return">>\u000a	<<script>>\u000a		Dialog.close()\u000a	<</script>>\u000a<</link>>\u000a@@
+p103
+sg23
+VInventory
+p104
+sg25
+g26
+((I2017
+I3
+I14
+I18
+I14
+I10
+I1
+I73
+I1
+tp105
+(dp106
+tp107
+Rp108
+sg31
+(lp109
+sg33
+g26
+((I2017
+I1
+I28
+I20
+I22
+I3
+I5
+I28
+I0
+tp110
+(dp111
+tp112
+Rp113
+sbsa(dp114
+g14
+I00
+sg15
+(lp115
+F380.4989352605631
+aF191.32735847593761
+asg17
+(itiddlywiki
+Tiddler
+p116
+(dp117
+g21
+VArray.prototype.remove = function(value)\u000a{\u000a	var item = this.indexOf(value);\u000a	if (item != -1)\u000a	{\u000a		return this.splice(item, 1);\u000a	}\u000a	else\u000a	{\u000a		return false;\u000a	}\u000a}
+p118
+sg23
+VRemove
+p119
+sg25
+g26
+((I2017
+I2
+I1
+I1
+I31
+I44
+I2
+I32
+I0
+tp120
+(dp121
+tp122
+Rp123
+sg31
+(lp124
+Vscript
+p125
+asg33
+g26
+((I2017
+I1
+I30
+I8
+I42
+I43
+I0
+I30
+I0
+tp126
+(dp127
+tp128
+Rp129
+sbsa(dp130
+g14
+I00
+sg15
+(lp131
+F202.74317129091216
+aF186.80751387273634
+asg17
+(itiddlywiki
+Tiddler
+p132
+(dp133
+g21
+V<<nobr>>\u000a@@color:white;\u000a<<if $inv.indexOf("Herb") gte 0>>\u000a	Your status slightly recovers!! <br>\u000a	<br>\u000a	Herb has been removed from your inventory.\u000a	<<set $inv.remove("Herb")>>\u000a	<<if $health lte 8>>\u000a		<<set $health to $health + 2>>\u000a		<<updatehp>>\u000a	<<else>>\u000a		<<set $health to 10>>\u000a		<<updatehp>>\u000a	<</if>>\u000a<<else>>\u000a	You do not have a Herb in your inventory.\u000a<</if>>\u000a@@\u000a<</nobr>>\u000a\u000a<<link "Return">>\u000a	<<script>>\u000a		Dialog.setup("Inventory", "inv");\u000a		Dialog.wiki(Story.get("Inventory").processText());\u000a		Dialog.open();\u000a	<</script>>\u000a<</link>>
+p134
+sg23
+VHeal
+p135
+sg25
+g26
+((I2017
+I3
+I14
+I18
+I45
+I40
+I1
+I73
+I1
+tp136
+(dp137
+tp138
+Rp139
+sg31
+(lp140
+sg33
+g26
+((I2017
+I2
+I1
+I0
+I50
+I36
+I2
+I32
+I0
+tp141
+(dp142
+tp143
+Rp144
+sbsa(dp145
+g14
+I00
+sg15
+(lp146
+F2228.0206666666677
+aF972.5393333333335
+asg17
+(itiddlywiki
+Tiddler
+p147
+(dp148
+g21
+VYou arrive at your destination and see that the paths split here into three. \u000a\u000aIn front of you are stairs leading down to a grand courtyard. There appears to be a giant circular construct in the middle of said courtyard. This could be quite an important place.\u000a\u000aTo your flanks are two hallways. Both hallway entrances have a nearly identical layout, but you are sure that they each lead to different places. It will be worth checking them out.\u000a\u000a[[Head through the left hallway|Hallway Left]]\u000a[[Head through the right hallway|Hallway Right]]\u000a[[Head down the stairs|Center]]\u000a[[Return to the gate|Gate2]]
+p149
+sg23
+VHub
+p150
+sg25
+g26
+((I2017
+I3
+I14
+I12
+I11
+I13
+I1
+I73
+I1
+tp151
+(dp152
+tp153
+Rp154
+sg31
+(lp155
+sg33
+g26
+((I2017
+I2
+I1
+I16
+I29
+I54
+I2
+I32
+I0
+tp156
+(dp157
+tp158
+Rp159
+sbsa(dp160
+g14
+I00
+sg15
+(lp161
+F2233.544000000001
+aF1431.8200000000008
+asg17
+(itiddlywiki
+Tiddler
+p162
+(dp163
+g21
+V<<if $hasTurtle is false>>\u000a<<if previous() is "impatient">>\u000aYou wake up moments later and somehow you are back in front of the tortoise gate. Maybe it would be wise to pay attention to what the voice is saying. <br><br>\u000a<<else>>\u000aUpon entering the hallway, you hear a voice resonate within your head.<br><br>\u000a\u000a<center>@@.telepathy;"The elder, scholarly and noble, though a bit long-winded at times."@@<br><br></center>\u000a\u000aSoon you arrive at a stone gate with a tortoise etched onto its face. Looking to your left, you see what looks like another door down the hall.<br><br>\u000a<</if>>\u000a[[Enter the door|Older Room]]<br>\u000a[[Continue down the hallway|Hallway Right 2]]<br>\u000a[[Return to center passage|Hub]]\u000a<<else>>\u000aThe gate is locked and does not budge. It would appear that you have accomplished your task here. The only thing you can do here is continue down the hallway to the next door. <br><br>\u000a\u000a[[Continue down the hallway|Hallway Right 2]]<br>\u000a[[Return to center passage|Hub]]\u000a<</if>>
+p164
+sg23
+VHallway Right
+p165
+sg25
+g26
+((I2017
+I2
+I5
+I18
+I47
+I15
+I6
+I36
+I0
+tp166
+(dp167
+tp168
+Rp169
+sg31
+(lp170
+Vnobr
+p171
+asg33
+g26
+((I2017
+I2
+I1
+I16
+I31
+I15
+I2
+I32
+I0
+tp172
+(dp173
+tp174
+Rp175
+sbsa(dp176
+g14
+I00
+sg15
+(lp177
+F2216.3620000000005
+aF580.2219999999995
+asg17
+(itiddlywiki
+Tiddler
+p178
+(dp179
+g21
+V<<if $hasTiger is false>>\u000aUpon entering the hallway, you hear a voice resonate within your head.<br><br>\u000a\u000a<center>@@.telepathy;"Noble queen, selfless and virtuous, shared her joy with all"@@<br><br></center>\u000a\u000aYou arrive at a stone gate with a tiger etched onto its face. Looking to your right, you see a collapsed hallway full of rubble. It may be worth investigating.<br><br>\u000a[[Enter the room|Queen Room]]<br>\u000a<<else>>\u000aThe gate is locked and does not budge. It would appear that you have accomplished your task here. The only thing remaining to do is continue down to the collapsed hallway.<br><br>\u000a<</if>>\u000a[[Continue down the hallway|Hallway Left 2]]<br>\u000a[[Return to center passage|Hub]]
+p180
+sg23
+VHallway Left
+p181
+sg25
+g26
+((I2017
+I2
+I5
+I18
+I42
+I11
+I6
+I36
+I0
+tp182
+(dp183
+tp184
+Rp185
+sg31
+(lp186
+Vnobr
+p187
+asg33
+g26
+((I2017
+I2
+I1
+I16
+I31
+I15
+I2
+I32
+I0
+tp188
+(dp189
+tp190
+Rp191
+sbsa(dp192
+g14
+I00
+sg15
+(lp193
+F2852.128000000012
+aF972.8299999999999
+asg17
+(itiddlywiki
+Tiddler
+p194
+(dp195
+g21
+V<<if previous() is "Hub">> You walk down the steps and walk into the open courtyard.  Although there is some ruin, it has mostly been kept in decent condition. In front of you is a plethora of sights, enough to overwhelm your senses. You begin to survey the room.<</if>>\u000a\u000aIn your direct front is what appears to be a [[compass-like instrument]] in the middle of a [[circle construct]] embedded into the ground. Past that, there seems to be an [[inscription]] along the furthest wall.\u000a\u000aAs you gaze up, you see countless [[gemstones]] overhead, as if emulating constellations. Along the ceiling, there is a giant [[golden serpentine dragon]] circling the heavens. \u000a\u000a[[Return back up the stairs|Hub]]
+p196
+sg23
+VCenter
+p197
+sg25
+g26
+((I2017
+I2
+I4
+I0
+I23
+I28
+I5
+I35
+I0
+tp198
+(dp199
+tp200
+Rp201
+sg31
+(lp202
+sg33
+g26
+((I2017
+I2
+I1
+I16
+I31
+I15
+I2
+I32
+I0
+tp203
+(dp204
+tp205
+Rp206
+sbsa(dp207
+g14
+I00
+sg15
+(lp208
+F2376.569333333331
+aF1725.0066666666683
+asg17
+(itiddlywiki
+Tiddler
+p209
+(dp210
+g21
+V<<set $patience to 0>>\u000aYou walk past the gate and into the room. The inside is lined with bookcases along the wall. The bookcases are packed full of ancient texts. All along the floor are sheets of worn paper. The text is illegable due to its age. It is safe to assume that the books will be like that, too. <br><br>\u000a\u000aIn the middle of the room sits the clay statue of a scholar, sculpt to forever loom his head over textbooks. Soon, a voice resonates within your head.<br>\u000a	<br>\u000a	<center>@@.telepathy;"Stay a while and listen, traveler. It will be worth your time"@@</center><br>\u000a	<<timed 20s>><span id="TortoiseHare">\u000a		<center>This is the story of a Tortoise and a Hare.<br> <br></center> </span>\u000a	<</timed>>\u000a<<if $patience is 0>>\u000a	<<timed 25s>>\u000a		<<append "#TortoiseHare">>  \u000a			<center> There once was an arrogant hare and a patient tortoise.<br><br></center>\u000a		<</append>>\u000a	<</timed>>\u000a	<<timed 30s>>\u000a		<<append "#TortoiseHare">>\u000a			<center> The hare would never stop bragging about his speed, mocking the tortoise for being slow.<br><br></center>\u000a		<</append>>\u000a	<</timed>>\u000a	<<timed 35s>>\u000a		<<append "#TortoiseHare">>\u000a			<center> One day, the tortoise challenged the hare to a race. <br><br></center>\u000a		<</append>>\u000a	<</timed>>\u000a	<<timed 40s>>\u000a		<<append "#TortoiseHare">>\u000a			<center> "I am slow, but I would still like to challenge you to a race! Right here! Past the tree!" exclaimed the tortoise<br><br></center>\u000a		<</append>>\u000a	<</timed>>\u000a	<<timed 45s>>\u000a		<<append "#TortoiseHare">>\u000a			<center> "You? Challenge me to a race?" I'll beat you with time to spare!" replied the hare.<br><br></center>\u000a		<</append>>\u000a	<</timed>>\u000a	<<timed 50s>>\u000a		<<append "#TortoiseHare">>\u000a			<center> The hare then bolted with lightning speed to the stump right before the goal. <br><br></center>\u000a		<</append>>\u000a	<</timed>>\u000a	<<timed 55s>>\u000a		<<append "#TortoiseHare">>\u000a			<center> Feeling confident about his victory, the hare begins to take a nap near the goal. <br><br> </center>\u000a		<</append>>\u000a	<</timed>>\u000a	<<timed 60s>>\u000a		<<append "#TortoiseHare">>\u000a			<center> As the hare slept, the tortoise walked patiently, valuing each step he took.<br><br></center>\u000a		<</append>>\u000a	<</timed>>\u000a	<<timed 65s>>\u000a		<<append "#TortoiseHare">>\u000a			<center> Step by step, the tortoise eventually crossed the finish line while the hare was asleep.<br><br></center>\u000a		<</append>>\u000a	<</timed>>\u000a	<<timed 70s>>\u000a		<<append "#TortoiseHare">>\u000a			<center> By the time the hare woke up, the tortoise had already won. <br><br></center>\u000a		<</append>>\u000a	<</timed>>\u000a	<<timed 75s>>\u000a		<<append "#TortoiseHare">>\u000a			<center> "How did I lose? I am fast, and you are slow!" the hare puzzled. <br><br></center>\u000a		<</append>>\u000a	<</timed>>\u000a	<<timed 80s>>\u000a		<<append "#TortoiseHare">>\u000a			<center> "I am slow, but I have patience. I never lost sight of my goal, my friend. Slow and steady wins the race!" the tortoise victoriously claims<br><br></center>\u000a		<</append>>\u000a	<</timed>>\u000a	<<timed 85s>>\u000a		<<append "#TortoiseHare">>\u000a			<<set $patience to 1>>\u000a			<center>@@.telepathy;"Thank you for listening to this story"@@<br><br></center>\u000a			As if by magic, the statue comes to life and lifts its head. The statue opens its hands, revealing the plate which it had been holding. It then ceases to move, returning to the lifeless stone statue it once was.<br><br>\u000a		<</append>>\u000a	<</timed>>\u000a<</if>>\u000a\u000a<<link "Approach the statue<br>">>\u000a	<<if $patience is 0>> <<goto "impatient">> \u000a	<<else>> <<goto "patient">>\u000a	<</if>>\u000a<</link>>\u000a\u000a[[Return|Hallway Right]]
+p211
+sg23
+VOlder Room
+p212
+sg25
+g26
+((I2017
+I3
+I16
+I22
+I14
+I20
+I3
+I75
+I1
+tp213
+(dp214
+tp215
+Rp216
+sg31
+(lp217
+Vnobr
+p218
+asg33
+g26
+((I2017
+I2
+I1
+I16
+I32
+I22
+I2
+I32
+I0
+tp219
+(dp220
+tp221
+Rp222
+sbsa(dp223
+g14
+I00
+sg15
+(lp224
+F2666.794000000007
+aF1436.5120000000004
+asg17
+(itiddlywiki
+Tiddler
+p225
+(dp226
+g21
+V<<if $hasBird is false>> \u000aAs you head down the hallway, a voice resonates inside your head. <br><br>\u000a\u000a<center>@@.telepathy;"The younger, a prankster who only lives for fun"@@<br><br></center>\u000a\u000aSoon, you arrive at a stone gate with a phoenix-like creature etched into it.<br><br>\u000a\u000a[[Enter the room|Younger Room]]<br>\u000a[[Return to the previous hallway|Hallway Right]]\u000a<<else>>\u000aYou find that the gate before you is now closed. With the voice no longer echoing inside your head and no other passages from here, the only thing you can do is turn around.<br><br>\u000a\u000a[[Return to the previous hallway|Hallway Right]]\u000a<</if>>
+p227
+sg23
+VHallway Right 2
+p228
+sg25
+g26
+((I2017
+I2
+I5
+I18
+I47
+I33
+I6
+I36
+I0
+tp229
+(dp230
+tp231
+Rp232
+sg31
+(lp233
+Vnobr
+p234
+asg33
+g26
+((I2017
+I2
+I1
+I16
+I32
+I22
+I2
+I32
+I0
+tp235
+(dp236
+tp237
+Rp238
+sbsa(dp239
+g14
+I00
+sg15
+(lp240
+F2890.423999999988
+aF1553.8120000000006
+asg17
+(itiddlywiki
+Tiddler
+p241
+(dp242
+g21
+V<<nobr>><<if visited() is 1>> You push open the gate and enter the room. As you step in, the gate closes behind you.<</if>><</nobr>>\u000a\u000aOn the far edge of the room is a clay statue of a young boy.  A voice resonates inside your head.\u000a\u000a<center>@@.telepathy;"I lost my <a style="color:white" data-passage="foundToy">toy</a>. Can you help me find it?"@@</center>\u000aSeeing as there is no other choice, [[you|nope]] [[begin|nope]] [[to|Glass]] [[look|nope]] [[through|nope]] [[the|Glass]] [[room|nope]].\u000a\u000a[[All|nope]] [[along|nope]] [[the|Glass]] [[floor|nope]] [[there|nope]] [[are|Glass]] [[scattered|nope]] [[fragments|nope]] [[of|Glass]] [[pottery,|nope]] [[wood,|nope]] [[and|nope]] [[glass|Glass]]. [[If|nope]] [[you|nope]] [[are|Glass]] [[to|nope]] [[find|nope]] [[what|Glass]] [[the|nope]] [[boy|nope]] [[asks|nope]] [[of|Glass]] [[you|nope]], [[you|nope]] [[should|Glass]] [[probably|nope]] [[be|nope]] [[careful|Glass]] [[and|nope]] [[pay|nope]] [[attention|Glass]] [[to|nope]] [[your|nope]] [[surroundings|Glass]]. \u000a\u000a<<nobr>><s><<link "Return">>\u000a<<script>>\u000a	UI.alert("Help me find my <u>toy</u>.")\u000a<</script>>\u000a<</link>> </s>\u000a<</nobr>>
+p243
+sg23
+VYounger Room
+p244
+sg25
+g26
+((I2017
+I2
+I5
+I18
+I49
+I29
+I6
+I36
+I0
+tp245
+(dp246
+tp247
+Rp248
+sg31
+(lp249
+sg33
+g26
+((I2017
+I2
+I1
+I16
+I32
+I39
+I2
+I32
+I0
+tp250
+(dp251
+tp252
+Rp253
+sbsa(dp254
+g14
+I00
+sg15
+(lp255
+F2212.4300000000007
+aF385.50399999999945
+asg17
+(itiddlywiki
+Tiddler
+p256
+(dp257
+g21
+V<<if previous() is "Hallway Left">> You push open the gate and enter the room. <</if>> Inside the room, there is but a single clay statue of a woman. Her arms are stretched forward, palms open. It appears as if she is giving you something.\u000a\u000a[[Approach the statue|TAKEN]]\u000a[[Return|Hallway Left]]
+p258
+sg23
+VQueen Room
+p259
+sg25
+g26
+((I2017
+I2
+I3
+I22
+I17
+I25
+I4
+I34
+I0
+tp260
+(dp261
+tp262
+Rp263
+sg31
+(lp264
+sg33
+g26
+((I2017
+I2
+I1
+I16
+I33
+I24
+I2
+I32
+I0
+tp265
+(dp266
+tp267
+Rp268
+sbsa(dp269
+g14
+I00
+sg15
+(lp270
+F2981.1579999999876
+aF1735.2800000000004
+asg17
+(itiddlywiki
+Tiddler
+p271
+(dp272
+g21
+VThis does not appear to be what he is looking for.\u000a\u000a[[Return|Younger Room]]
+p273
+sg23
+Vnope
+p274
+sg25
+g26
+((I2017
+I2
+I2
+I23
+I43
+I42
+I3
+I33
+I0
+tp275
+(dp276
+tp277
+Rp278
+sg31
+(lp279
+sg33
+g26
+((I2017
+I2
+I1
+I16
+I41
+I25
+I2
+I32
+I0
+tp280
+(dp281
+tp282
+Rp283
+sbsa(dp284
+g14
+I00
+sg15
+(lp285
+F723.2213333333341
+aF22.843999999999184
+asg17
+(itiddlywiki
+Tiddler
+p286
+(dp287
+g21
+V@@color:white;Status:<<nobr>>\u000a<<if $health is 10>>\u000aHealthy\u000a<</if>>\u000a<<if $health lte 9 and $health gte 7>>\u000aQuite well\u000a<</if>>\u000a<<if $health lte 6 and $health gte 4>>\u000aAverage\u000a<</if>>\u000a<<if $health lte 3 and $health gte 1>>\u000aPoor\u000a<</if>>\u000a<<if $health lte 0>>\u000aDead@@\u000a<</if>>\u000a<</nobr>>
+p288
+sg23
+VStoryCaption
+p289
+sg25
+g26
+((I2017
+I3
+I11
+I11
+I50
+I59
+I5
+I70
+I0
+tp290
+(dp291
+tp292
+Rp293
+sg31
+(lp294
+sg33
+g26
+((I2017
+I2
+I2
+I9
+I9
+I2
+I3
+I33
+I0
+tp295
+(dp296
+tp297
+Rp298
+sbsa(dp299
+g14
+I00
+sg15
+(lp300
+F200.0893333333334
+aF346.2206666666667
+asg17
+(itiddlywiki
+Tiddler
+p301
+(dp302
+g21
+V<<nobr>>\u000a@@color:white;\u000a<<if $inv.indexOf("Water Canteen") gte 0>>\u000a	You drink the water from your canteen. You feel slightly better<br>\u000a	<br>\u000a	Your canteen is now empty.\u000a	<<set $inv.remove("Water Canteen")>>\u000a	<<set $inv.push("Empty Canteen")>>\u000a	<<if $health lt 10>>\u000a		<<set $health to $health + 1>>\u000a	<</if>>\u000a<<else>>\u000a	You do not have any water.\u000a<</if>>\u000a@@\u000a<</nobr>>\u000a\u000a<<link "Return">>\u000a	<<script>>\u000a		Dialog.setup("Inventory", "inv");\u000a		Dialog.wiki(Story.get("Inventory").processText());\u000a		Dialog.open();\u000a	<</script>>\u000a<</link>>
+p303
+sg23
+VWater
+p304
+sg25
+g26
+((I2017
+I3
+I11
+I11
+I53
+I36
+I5
+I70
+I0
+tp305
+(dp306
+tp307
+Rp308
+sg31
+(lp309
+sg33
+g26
+((I2017
+I2
+I2
+I19
+I57
+I0
+I3
+I33
+I0
+tp310
+(dp311
+tp312
+Rp313
+sbsa(dp314
+g14
+I00
+sg15
+(lp315
+F3082.6439999999902
+aF1553.0520000000004
+asg17
+(itiddlywiki
+Tiddler
+p316
+(dp317
+g21
+VYou cut yourself on a fragment of glass. <<set $health to $health - 1>>\u000a\u000a<<if $health gt 0>> You've taken a light wound.\u000a[[Return|Younger Room]]\u000a<<else>>\u000aYou are bleeding out. Unfortunately, you will now join the spirit of this young boy in this room forever.\u000a\u000aYour journey has come to an end.\u000a<</if>>
+p318
+sg23
+VGlass
+p319
+sg25
+g26
+((I2017
+I2
+I3
+I0
+I21
+I2
+I4
+I34
+I0
+tp320
+(dp321
+tp322
+Rp323
+sg31
+(lp324
+sg33
+g26
+((I2017
+I2
+I3
+I0
+I9
+I35
+I4
+I34
+I0
+tp325
+(dp326
+tp327
+Rp328
+sbsa(dp329
+g14
+I00
+sg15
+(lp330
+F2722.27199999999
+aF1735.8880000000008
+asg17
+(itiddlywiki
+Tiddler
+p331
+(dp332
+g21
+VUpon the realization that the boy was indeed quite the prankster, the stone statue suddenly starts moving. Its hands slowly open and reveal a stone plate with a carving the carving of a phoenix-like creature on its face. You take it along with you.\u000a\u000aVermilion Bird Plate has been added to your inventory.<<nobr>>\u000a<<set $inv.push("Vermilion Bird Plate")>>\u000a<<set $hasBird to true>>\u000a<</nobr>>\u000a\u000a[[Return to the hallway|Hallway Right 2]]
+p333
+sg23
+VfoundToy
+p334
+sg25
+g26
+((I2017
+I2
+I4
+I0
+I29
+I5
+I5
+I35
+I0
+tp335
+(dp336
+tp337
+Rp338
+sg31
+(lp339
+sg33
+g26
+((I2017
+I2
+I3
+I0
+I26
+I6
+I4
+I34
+I0
+tp340
+(dp341
+tp342
+Rp343
+sbsa(dp344
+g14
+I00
+sg15
+(lp345
+F7519.1946666666845
+aF961.5520000000002
+asg17
+(itiddlywiki
+Tiddler
+p346
+(dp347
+g21
+VYou jump out of the cave,landing face first into the ground. You flip your body around to look up at the sky you have not seen in ages. The sunlight somewhat stings your eyes, but you are glad to be out of the cave.\u000a\u000aAs you sit yourself up, you see that the cave entrance was once hidden behind foliage begin to vanish. Considering your experiences, it is hardly surprising to you.\u000a\u000aYou return home with the orb you found in the tomb. What you will do with it is up to you, but for now, the journey you had is now over.\u000a\u000a<center><h1>The End</h1></center>\u000a\u000a<<audio "quake" volume 0.25 fadeout>>\u000a<<audio "outside" play>>\u000a
+p348
+sg23
+VEscape End
+p349
+sg25
+g26
+((I2017
+I3
+I14
+I19
+I43
+I52
+I1
+I73
+I1
+tp350
+(dp351
+tp352
+Rp353
+sg31
+(lp354
+sg33
+g26
+((I2017
+I2
+I3
+I0
+I51
+I45
+I4
+I34
+I0
+tp355
+(dp356
+tp357
+Rp358
+sbsa(dp359
+g14
+I00
+sg15
+(lp360
+F1956.3193333333322
+aF982.539333333334
+asg17
+(itiddlywiki
+Tiddler
+p361
+(dp362
+g21
+V<<audio gate play>>\u000a<<audio rocks play>>\u000a\u000aYou push open the gate and pass through the entrance. The cavern scenery that you have been accustomed to has now been entirely replaced by stone bricks and tiles. As you step forward, one of the tiles below you are quite a bit looser than the others. Slowly, the lumbering gate behind you closes, sealing you within. <br><br>\u000aA mysterious glow envelopes the entire structure, lighting the way forward. Seeing as you now have vision, you put your flashlight away. You see a larger room off in the distance.<br><br>\u000a\u000a[[Continue forward|Hub]]<br><br><br><br><br><br>\u000a\u000a@@color:#111;As you dig around, you find that there is a hidden panel along the floor.<br><br>\u000a\u000a<a style="color:#111" data-passage="Hidden"><u>Lift the panel</u></a>@@
+p363
+sg23
+VRubble Path
+p364
+sg25
+g26
+((I2017
+I3
+I14
+I15
+I59
+I29
+I1
+I73
+I1
+tp365
+(dp366
+tp367
+Rp368
+sg31
+(lp369
+Vnobr
+p370
+asg33
+g26
+((I2017
+I2
+I3
+I6
+I43
+I49
+I4
+I34
+I0
+tp371
+(dp372
+tp373
+Rp374
+sbsa(dp375
+g14
+I00
+sg15
+(lp376
+F2527.1393333333053
+aF1724.474000000001
+asg17
+(itiddlywiki
+Tiddler
+p377
+(dp378
+g21
+VYou approach the statue sitting at the table. Suddenly, you feel a bit sleepy. The world around you begins to turn as you lose conciousness\u000a\u000a<<set $health to $health - 2>>\u000a	<<if $health lte 0>>\u000a		, never to awaken again. <br><br> \u000a		Your journey ends here.\u000a	<<else>>\u000a		.<br><br>\u000a		[[Continue|Hallway Right]]\u000a	<</if>>\u000a
+p379
+sg23
+Vimpatient
+p380
+sg25
+g26
+((I2017
+I2
+I3
+I11
+I48
+I23
+I4
+I34
+I0
+tp381
+(dp382
+tp383
+Rp384
+sg31
+(lp385
+Vnobr
+p386
+asg33
+g26
+((I2017
+I2
+I3
+I8
+I39
+I27
+I4
+I34
+I0
+tp387
+(dp388
+tp389
+Rp390
+sbsa(dp391
+g14
+I00
+sg15
+(lp392
+F2180.3026666666656
+aF1739.537333333334
+asg17
+(itiddlywiki
+Tiddler
+p393
+(dp394
+g21
+VYou approach the statue of the scholar and take the object that it was holding.\u000a\u000aThe object was a plate with an elaborate tortoise carved into it.\u000a\u000aBlack Tortoise Plate has been added to your inventory<<nobr>>\u000a<<set $inv.push("Black Tortoise Plate")>>\u000a<<set $hasTurtle to true>> <</nobr>>\u000a\u000a[[Return|Hallway Right]]
+p395
+sg23
+Vpatient
+p396
+sg25
+g26
+((I2017
+I2
+I3
+I11
+I42
+I8
+I4
+I34
+I0
+tp397
+(dp398
+tp399
+Rp400
+sg31
+(lp401
+sg33
+g26
+((I2017
+I2
+I3
+I8
+I39
+I27
+I4
+I34
+I0
+tp402
+(dp403
+tp404
+Rp405
+sbsa(dp406
+g14
+I00
+sg15
+(lp407
+F2698.659333333343
+aF569.0099999999994
+asg17
+(itiddlywiki
+Tiddler
+p408
+(dp409
+g21
+VIn front of you is are piles of rubble. Amongst the rubble, you see the stone remnants of a snake-like dragon. Its overall shapes is highly reminiscent of a fountain.<br><br>\u000a\u000a<<if $hasTiger is true and $hasDragon is false>> \u000a[[Inspect the rubble|Dragon Plate]]<br><</if>>\u000a<<if $hasTiger is true and $hasDragon is true>> \u000a[[Inspect the rubble|no water]]<br><</if>>\u000a<<if $hasTiger is false and $hasDragon is false>>\u000a[[Inspect the rubble|Fountain Examine]]<br><</if>>\u000a\u000a[[Return to the previous hallway|Hallway Left]]
+p410
+sg23
+VHallway Left 2
+p411
+sg25
+g26
+((I2017
+I2
+I5
+I5
+I8
+I21
+I6
+I36
+I0
+tp412
+(dp413
+tp414
+Rp415
+sg31
+(lp416
+Vnobr
+p417
+asg33
+g26
+((I2017
+I2
+I3
+I13
+I47
+I20
+I4
+I34
+I0
+tp418
+(dp419
+tp420
+Rp421
+sbsa(dp422
+g14
+I00
+sg15
+(lp423
+F2580.000666666696
+aF264.89066666666616
+asg17
+(itiddlywiki
+Tiddler
+p424
+(dp425
+g21
+VYou examine the fountain closer. The water that has been flowing from the dragon's head is pooling into a basin. Unfortunately, this water does not look drinkable.\u000a<<nobr>> \u000a	<<if $inv.indexOf("Dirty Stone Plate") gte 0>>\u000a		Though, maybe you can clean up the dirty plate you found in the basin. <br><br>\u000a		[[Clean the dirty plate]]\u000a	<</if>>\u000a<</nobr>>\u000a[[Return|Hallway Left 2]]
+p426
+sg23
+VFountain Examine
+p427
+sg25
+g26
+((I2017
+I2
+I4
+I22
+I14
+I1
+I5
+I35
+I0
+tp428
+(dp429
+tp430
+Rp431
+sg31
+(lp432
+sg33
+g26
+((I2017
+I2
+I3
+I14
+I34
+I16
+I4
+I34
+I0
+tp433
+(dp434
+tp435
+Rp436
+sbsa(dp437
+g14
+I00
+sg15
+(lp438
+F2824.4999999999995
+aF269.7439999999999
+asg17
+(itiddlywiki
+Tiddler
+p439
+(dp440
+g21
+VYou draw the plate closer to the basin of the fountain, eventually pluging the entirety into the water. You begin to scrub up and down with your hands, freeing the dirt and grime from the surface. As you continue cleaning, the true face comes to light. The plate has an elaborate tiger engraved onto it.\u000a\u000aDirty Stone Plate has been removed from your inventory.\u000aWhite Tiger Plate has been added to your inventory.\u000a<<nobr>><<set $inv.remove("Dirty Stone Plate")>>\u000a<<set $inv.push("White Tiger Plate")>>\u000a<</nobr>>\u000a[[Return|Hallway Left 2]]
+p441
+sg23
+VClean the dirty plate
+p442
+sg25
+g26
+((I2017
+I2
+I3
+I22
+I2
+I18
+I4
+I34
+I0
+tp443
+(dp444
+tp445
+Rp446
+sg31
+(lp447
+sg33
+g26
+((I2017
+I2
+I3
+I14
+I40
+I3
+I4
+I34
+I0
+tp448
+(dp449
+tp450
+Rp451
+sbsa(dp452
+g14
+I00
+sg15
+(lp453
+F4813.992000000021
+aF967.2313333333335
+asg17
+(itiddlywiki
+Tiddler
+p454
+(dp455
+g21
+VAs you walk into the final chamber, you feel a bit overwhemed by how lavish it is. The room is lined with carvings of various animals, including the tortoise, tiger, dragon, and phoenix that you have encountered earlier. In the back, you see what appears to be a coffin. In the middle of the room lies a floating metallic orb. A voice resonates within your mind.\u000a\u000a<center>@@.telepathy;""Welcome, young one. You who are virtuous and wise may claim your prize"@@ </center>\u000a\u000aUpon hearing those words, you walk up to the orb. The spiraling mass of yellow metallic liquid was quite strange. It was clearly reflective like a metal, spiraled like a liquid, but it held the physical shape of a ball that you can touch. Its nature can only be described as magical. You do not doubt that the source of all of the supernatural things happening. It would not surprise you if the will collapse if you take it.\u000a\u000a[[Take the orb]]\u000a[[Leave the orb]]
+p456
+sg23
+VFinal Chamber
+p457
+sg25
+g26
+((I2017
+I3
+I16
+I21
+I41
+I8
+I3
+I75
+I1
+tp458
+(dp459
+tp460
+Rp461
+sg31
+(lp462
+sg33
+g26
+((I2017
+I2
+I3
+I17
+I34
+I28
+I4
+I34
+I0
+tp463
+(dp464
+tp465
+Rp466
+sbsa(dp467
+g14
+I00
+sg15
+(lp468
+F35.01466666666753
+aF555.8300000000002
+asg17
+(itiddlywiki
+Tiddler
+p469
+(dp470
+g21
+VUpdate with traps and light
+p471
+sg23
+VCave sequence
+p472
+sg25
+g26
+((I2017
+I3
+I12
+I0
+I37
+I29
+I6
+I71
+I0
+tp473
+(dp474
+tp475
+Rp476
+sg31
+(lp477
+Vannotation
+p478
+asg33
+g26
+((I2017
+I2
+I3
+I17
+I41
+I29
+I4
+I34
+I0
+tp479
+(dp480
+tp481
+Rp482
+sbsa(dp483
+g14
+I00
+sg15
+(lp484
+F3805.212000000008
+aF126.68399999999936
+asg17
+(itiddlywiki
+Tiddler
+p485
+(dp486
+g21
+VBased on the four symbols and give elements of China. The basic idea is similar to the zodiac arragement in Necropolis, except using the 4 (actually 5) divine creatures.\u000a\u000aNorth = Black Tortoise (Water) - longevity and wisdom\u000aSouth = Vermillion Bird, Phoenix-like (Fire) - good luck\u000aEast = Azure Dragon (Wood, even though most chinese dragons are associated with water) - Just, benevolent, wealth and good fortune\u000aWest = White Tiger (Metal) - Virtue, peace\u000aCenter = Yellow Dragon (Earth, quintessence, changing of seasons) - reward item -> escape sequence\u000a\u000aPuzzles\u000aWhite Tiger (Queen) -> take dirty plate, wash it in the fountain, return the plate, get real plate\u000aAzure Dragon (King) -> after Queen's, revisit fountain and it stops working, get plate\u000aTortoise (Elder) -> longevity (literally) and wisdom, listen to the entire passage and continue\u000aPhoenix (Younger) -> good luck (finding the damn trick)
+p487
+sg23
+VOverall Puzzle
+p488
+sg25
+g26
+((I2017
+I3
+I16
+I22
+I51
+I25
+I3
+I75
+I1
+tp489
+(dp490
+tp491
+Rp492
+sg31
+(lp493
+Vannotation
+p494
+asg33
+g26
+((I2017
+I2
+I3
+I17
+I41
+I52
+I4
+I34
+I0
+tp495
+(dp496
+tp497
+Rp498
+sbsa(dp499
+g14
+I00
+sg15
+(lp500
+F6216.9
+aF107.91600000000011
+asg17
+(itiddlywiki
+Tiddler
+p501
+(dp502
+g21
+VTimed\u000a\u000aCave section but in reverse
+p503
+sg23
+VEscape Sequence
+p504
+sg25
+g26
+((I2017
+I2
+I3
+I17
+I50
+I9
+I4
+I34
+I0
+tp505
+(dp506
+tp507
+Rp508
+sg31
+(lp509
+Vannotation
+p510
+asg33
+g26
+((I2017
+I2
+I3
+I17
+I49
+I58
+I4
+I34
+I0
+tp511
+(dp512
+tp513
+Rp514
+sbsa(dp515
+g14
+I00
+sg15
+(lp516
+F1984.8679999999981
+aF383.15800000000013
+asg17
+(itiddlywiki
+Tiddler
+p517
+(dp518
+g21
+VYou approach the statue and examine her open palms.\u000a<<if $inv.indexOf("Dirty Stone Plate") gte 0 or $inv.indexOf("White Tiger Plate") gte 0>>\u000aThere appears to be nothing on them.<br><br>\u000a<<if $inv.indexOf("Water Canteen") gte 0>>[[Pour water onto the open palms]]<br><</if>>\u000a[[Return the stone plate]]<br>\u000a<<else>>\u000aResting on them is a stone plate. This stone plate looks a bit worn and dirty, you can't quite tell what is etched onto it. <br><br>\u000a[[Take the stone plate]]<br>\u000a<</if>>\u000a[[Step away from the statue|Queen Room]]
+p519
+sg23
+VTAKEN
+p520
+sg25
+g26
+((I2017
+I3
+I14
+I16
+I4
+I18
+I1
+I73
+I1
+tp521
+(dp522
+tp523
+Rp524
+sg31
+(lp525
+Vnobr
+p526
+asg33
+g26
+((I2017
+I2
+I3
+I18
+I10
+I32
+I4
+I34
+I0
+tp527
+(dp528
+tp529
+Rp530
+sbsa(dp531
+g14
+I00
+sg15
+(lp532
+F1973.1379999999986
+aF176.7099999999998
+asg17
+(itiddlywiki
+Tiddler
+p533
+(dp534
+g21
+VYou place the stone plate back onto the pedistal. <br><br>\u000a\u000a<<if $inv.indexOf("Dirty Stone Plate") gte 0>>\u000aDirty Stone Plate has been removed from your inventory.<br><br>\u000a<<set $inv.remove("Dirty Stone Plate")>>\u000a<<set $hasFakeTiger to false>>\u000a\u000a[[Return|Queen Room]]\u000a<</if>>\u000a\u000a<<if $inv.indexOf("White Tiger Plate") gte 0>>\u000aWhite Tiger Plate has been removed from your inventory.<br><br>\u000a<<set $inv.remove("White Tiger Plate")>>\u000a<<set $hasFakeTiger to false>>\u000a\u000a[[Suddenly the ground shakes...]]\u000a<</if>>
+p535
+sg23
+VReturn the stone plate
+p536
+sg25
+g26
+((I2017
+I2
+I3
+I22
+I39
+I15
+I4
+I34
+I0
+tp537
+(dp538
+tp539
+Rp540
+sg31
+(lp541
+Vnobr
+p542
+asg33
+g26
+((I2017
+I2
+I3
+I22
+I9
+I11
+I4
+I34
+I0
+tp543
+(dp544
+tp545
+Rp546
+sbsa(dp547
+g14
+I00
+sg15
+(lp548
+F1974.7239999999983
+aF592.778
+asg17
+(itiddlywiki
+Tiddler
+p549
+(dp550
+g21
+VLooking at the dirty stone plate again, decide to take it with you.<br><br>\u000a<<set $hasFakeTiger to true>>\u000a<<set $inv.push("Dirty Stone Plate")>>\u000aDirty Stone Plate has been added to your inventory.<br><br>\u000a[[Return|Queen Room]]
+p551
+sg23
+VTake the stone plate
+p552
+sg25
+g26
+((I2017
+I2
+I3
+I22
+I39
+I49
+I4
+I34
+I0
+tp553
+(dp554
+tp555
+Rp556
+sg31
+(lp557
+Vnobr
+p558
+asg33
+g26
+((I2017
+I2
+I3
+I22
+I15
+I39
+I4
+I34
+I0
+tp559
+(dp560
+tp561
+Rp562
+sbsa(dp563
+g14
+I00
+sg15
+(lp564
+F2226.505999999999
+aF179.05600000000004
+asg17
+(itiddlywiki
+Tiddler
+p565
+(dp566
+g21
+VAs you place the White Tiger Plate onto the open palm of the statue, the ground begins to shake.\u000a\u000aThe clay statue of the woman comes to life and clasps her hands together. When that happens, the wall behind the statue begins to open up. A new path has been discovered.\u000a\u000a[[Venture into the newly opened passage|Real Tiger]]
+p567
+sg23
+VSuddenly the ground shakes...
+p568
+sg25
+g26
+((I2017
+I2
+I3
+I22
+I31
+I28
+I4
+I34
+I0
+tp569
+(dp570
+tp571
+Rp572
+sg31
+(lp573
+sg33
+g26
+((I2017
+I2
+I3
+I22
+I24
+I10
+I4
+I34
+I0
+tp574
+(dp575
+tp576
+Rp577
+sbsa(dp578
+g14
+I00
+sg15
+(lp579
+F1769.6439999999984
+aF379.2919999999997
+asg17
+(itiddlywiki
+Tiddler
+p580
+(dp581
+g21
+VThanks!\u000a<<nobr>><<set $inv.remove("Water Canteen")>>\u000a<<set $inv.push("Empty Canteen")>><</nobr>>\u000a[[Step away from the statue|Queen Room]]
+p582
+sg23
+VPour water onto the open palms
+p583
+sg25
+g26
+((I2017
+I2
+I5
+I23
+I31
+I12
+I6
+I36
+I0
+tp584
+(dp585
+tp586
+Rp587
+sg31
+(lp588
+sg33
+g26
+((I2017
+I2
+I3
+I22
+I26
+I6
+I4
+I34
+I0
+tp589
+(dp590
+tp591
+Rp592
+sbsa(dp593
+g14
+I00
+sg15
+(lp594
+F2219.4679999999985
+aF14.83599999999987
+asg17
+(itiddlywiki
+Tiddler
+p595
+(dp596
+g21
+VIn the room is but a single pedestal, forged of a strange metal. What lies before you is the real White Tiger Plate. Seeing as it has been gifted to you, you take it.\u000a\u000aWhite Tiger Plate has been added to your inventory.\u000a<<nobr>> <<set $inv.push("White Tiger Plate")>><<set $hasTiger to true>> <</nobr>>\u000a[[Return to the hallway|Hallway Left]]
+p597
+sg23
+VReal Tiger
+p598
+sg25
+g26
+((I2017
+I2
+I3
+I22
+I47
+I0
+I4
+I34
+I0
+tp599
+(dp600
+tp601
+Rp602
+sg31
+(lp603
+sg33
+g26
+((I2017
+I2
+I3
+I22
+I31
+I47
+I4
+I34
+I0
+tp604
+(dp605
+tp606
+Rp607
+sbsa(dp608
+g14
+I00
+sg15
+(lp609
+F2958.4706666666675
+aF434.46200000000016
+asg17
+(itiddlywiki
+Tiddler
+p610
+(dp611
+g21
+VYou approach the dragon-headed fountain. Upon your approach, the fountain stops emitting its water. Suddenly, the jaws of the dragon begin to open, as if alive. As its hinge swings open, it reveals a small wooden pedestal. Resting on on said pedestal is a plate with the engravings of a dragon. Seeing as how it was offered to you, you take the plate with you.\u000a\u000aAzure Dragon Plate was added to your inventory. <<set $hasDragon to true>><<set $inv.push("Azure Dragon Plate")>>\u000a\u000a[[Return to the hallway|Hallway Left 2]]
+p612
+sg23
+VDragon Plate
+p613
+sg25
+g26
+((I2017
+I2
+I3
+I23
+I16
+I15
+I4
+I34
+I0
+tp614
+(dp615
+tp616
+Rp617
+sg31
+(lp618
+sg33
+g26
+((I2017
+I2
+I3
+I22
+I44
+I21
+I4
+I34
+I0
+tp619
+(dp620
+tp621
+Rp622
+sbsa(dp623
+g14
+I00
+sg15
+(lp624
+F2429.9413333333214
+aF446.00200000000046
+asg17
+(itiddlywiki
+Tiddler
+p625
+(dp626
+g21
+VNow that the Azure Dragon Plate has been removed, the dragon head is no longer pouring out water. What lies before you is simply another pile of rubble and debris.\u000a\u000a[[Return to the hallway|Hallway Left 2]]
+p627
+sg23
+Vno water
+p628
+sg25
+g26
+((I2017
+I2
+I3
+I22
+I49
+I54
+I4
+I34
+I0
+tp629
+(dp630
+tp631
+Rp632
+sg31
+(lp633
+sg33
+g26
+((I2017
+I2
+I3
+I22
+I48
+I54
+I4
+I34
+I0
+tp634
+(dp635
+tp636
+Rp637
+sbsa(dp638
+g14
+I00
+sg15
+(lp639
+F2857.5799999999913
+aF1204.2580000000005
+asg17
+(itiddlywiki
+Tiddler
+p640
+(dp641
+g21
+VIn the middle of the [[circle construct]] is a device that appears on the surface to be a compass. However, the markings seem to correspond to elements rather than directions. From what you can gather...\u000a\u000aFacing forward towards the inscription is @@color:blue;water@@.\u000aTo your right is @@color:brown;wood@@.\u000aBehind towards the stairs is @@color:red;fire@@.\u000aAnd finally to your left is @@color:yellow;metal@@.\u000a\u000a[[Return|Center]]
+p642
+sg23
+Vcompass-like instrument
+p643
+sg25
+g26
+((I2017
+I2
+I5
+I4
+I25
+I56
+I6
+I36
+I0
+tp644
+(dp645
+tp646
+Rp647
+sg31
+(lp648
+sg33
+g26
+((I2017
+I2
+I4
+I0
+I3
+I32
+I5
+I35
+I0
+tp649
+(dp650
+tp651
+Rp652
+sbsa(dp653
+g14
+I00
+sg15
+(lp654
+F3126.6099999999806
+aF1190.1820000000007
+asg17
+(itiddlywiki
+Tiddler
+p655
+(dp656
+g21
+VYou approach the inscriptions along the wall. It reads...\u000a\u000a<center><h2>Sacred beings of the world</h2></center>\u000a<center>Black Tortoise of the North, harbinger of winter </center>\u000a<center>Azure Dragon of the East, herald of spring</center>\u000a<center>Vermilion Bird of the South, sign of summer</center>\u000a<center>White Tiger of the West, forerunner of autumn</center>\u000a\u000a[[Return|Center]]
+p657
+sg23
+Vinscription
+p658
+sg25
+g26
+((I2017
+I2
+I4
+I1
+I4
+I42
+I5
+I35
+I0
+tp659
+(dp660
+tp661
+Rp662
+sg31
+(lp663
+sg33
+g26
+((I2017
+I2
+I4
+I0
+I3
+I32
+I5
+I35
+I0
+tp664
+(dp665
+tp666
+Rp667
+sbsa(dp668
+g14
+I00
+sg15
+(lp669
+F2841.157999999999
+aF773.42
+asg17
+(itiddlywiki
+Tiddler
+p670
+(dp671
+g21
+VAll along the ceiling, you can see that there are gemstones embedded into the architecture. They twinkle mysteriously, shining its light throughout the entire structure. Every now and then, you see the [[golden serpentine dragon]] float by.\u000a\u000aThe way tthe gemstones shine from above reminds you of constellations of the night sky. \u000a\u000a[[Return|Center]]
+p672
+sg23
+Vgemstones
+p673
+sg25
+g26
+((I2017
+I2
+I4
+I0
+I16
+I9
+I5
+I35
+I0
+tp674
+(dp675
+tp676
+Rp677
+sg31
+(lp678
+sg33
+g26
+((I2017
+I2
+I4
+I0
+I3
+I32
+I5
+I35
+I0
+tp679
+(dp680
+tp681
+Rp682
+sbsa(dp683
+g14
+I00
+sg15
+(lp684
+F3261.8519999999808
+aF970.4839999999997
+asg17
+(itiddlywiki
+Tiddler
+p685
+(dp686
+g21
+VIn the center of the room is an extremely large and elaborate circular structure. The floor has been etched with numerous markings with some sort of [[mysterious metallic liquid]] floating inbetween all of the crevices.\u000a\u000aThere appear to be slots every 90 degrees of the circle, seeming to represent directions. Maybe the [[compass-like instrument]] in the middle or the [[inscription]] on the wall will help determine its purpose.\u000a\u000a[[Begin inserting plates|insert slots]]\u000a[[Return|Center]]
+p687
+sg23
+Vcircle construct
+p688
+sg25
+g26
+((I2017
+I2
+I4
+I1
+I48
+I6
+I5
+I35
+I0
+tp689
+(dp690
+tp691
+Rp692
+sg31
+(lp693
+sg33
+g26
+((I2017
+I2
+I4
+I0
+I3
+I32
+I5
+I35
+I0
+tp694
+(dp695
+tp696
+Rp697
+sbsa(dp698
+g14
+I00
+sg15
+(lp699
+F2619.0479999999957
+aF842.2139999999999
+asg17
+(itiddlywiki
+Tiddler
+p700
+(dp701
+g21
+VThere is a giant golden dragon dragon dancing overhead. Its large serpentine body appears to move clockwise. It has been known for a golden dragon to represent the changing of seasons.\u000a\u000a[[Return|Center]]
+p702
+sg23
+Vgolden serpentine dragon
+p703
+sg25
+g26
+((I2017
+I2
+I4
+I2
+I1
+I19
+I5
+I35
+I0
+tp704
+(dp705
+tp706
+Rp707
+sg31
+(lp708
+sg33
+g26
+((I2017
+I2
+I4
+I0
+I3
+I32
+I5
+I35
+I0
+tp709
+(dp710
+tp711
+Rp712
+sbsa(dp713
+g14
+I00
+sg15
+(lp714
+F4270.551333333316
+aF972.0040000000006
+asg17
+(itiddlywiki
+Tiddler
+p715
+(dp716
+g21
+VThis is the slot closest to the inscription.<br><br>\u000a\u000a@@color:blue;Water@@: <<print $slotN>> <br><br>\u000a\u000a<<if $slotN is not "Empty">>\u000a	[[Remove the current plate|Remove water]]<br>\u000a<<else>>\u000a	<<if $inv.indexOf("Azure Dragon Plate") gte 0>> \u000a		[[Insert the Azure Dragon Plate|Insert water][$slotN to "Azure Dragon Plate"]]<br>\u000a		<</if>>\u000a	<<if $inv.indexOf("Black Tortoise Plate") gte 0>>\u000a		[[Insert the Black Tortoise Plate|Insert water][$slotN to "Black Tortoise Plate"]]<br><</if>>\u000a	<<if $inv.indexOf("Vermilion Bird Plate") gte 0>>\u000a		[[Insert the Vermilion Bird Plate|Insert water][$slotN to "Vermilion Bird Plate"]]<br><</if>>\u000a	<<if $inv.indexOf("White Tiger Plate") gte 0>>\u000a		[[Insert the White Tiger Plate|Insert water][$slotN to "White Tiger Plate"]]<br><</if>>\u000a<</if>>\u000a\u000a[[Return|insert slots]]
+p717
+sg23
+VwaterN
+p718
+sg25
+g26
+((I2017
+I2
+I4
+I1
+I54
+I35
+I5
+I35
+I0
+tp719
+(dp720
+tp721
+Rp722
+sg31
+(lp723
+Vnobr
+p724
+asg33
+g26
+((I2017
+I2
+I4
+I0
+I46
+I29
+I5
+I35
+I0
+tp725
+(dp726
+tp727
+Rp728
+sbsa(dp729
+g14
+I00
+sg15
+(lp730
+F3776.451999999993
+aF967.3120000000006
+asg17
+(itiddlywiki
+Tiddler
+p731
+(dp732
+g21
+VThis is the slot closest to the stairs, opposite of the inscription< br><br>\u000a\u000a@@color:red;Fire@@: <<print $slotS>> <br><br>\u000a\u000a<<if $slotS is not "Empty">>\u000a	[[Remove the current plate|Remove fire]]<br>\u000a<<else>>\u000a	<<if $inv.indexOf("Azure Dragon Plate") gte 0>> \u000a		[[Insert the Azure Dragon Plate|Insert fire][$slotS to "Azure Dragon Plate"]]<br>\u000a		<</if>>\u000a	<<if $inv.indexOf("Black Tortoise Plate") gte 0>>\u000a		[[Insert the Black Tortoise Plate|Insert fire][$slotS to "Black Tortoise Plate"]]<br><</if>>\u000a	<<if $inv.indexOf("Vermilion Bird Plate") gte 0>>\u000a		[[Insert the Vermilion Bird Plate|Insert fire][$slotS to "Vermilion Bird Plate"]]<br><</if>>\u000a	<<if $inv.indexOf("White Tiger Plate") gte 0>>\u000a		[[Insert the White Tiger Plate|Insert fire][$slotS to "White Tiger Plate"]]<br><</if>>\u000a<</if>>\u000a\u000a[[Return|insert slots]]
+p733
+sg23
+VfireS
+p734
+sg25
+g26
+((I2017
+I2
+I4
+I2
+I3
+I35
+I5
+I35
+I0
+tp735
+(dp736
+tp737
+Rp738
+sg31
+(lp739
+Vnobr
+p740
+asg33
+g26
+((I2017
+I2
+I4
+I0
+I46
+I29
+I5
+I35
+I0
+tp741
+(dp742
+tp743
+Rp744
+sbsa(dp745
+g14
+I00
+sg15
+(lp746
+F3991.153999999988
+aF1237.9280000000006
+asg17
+(itiddlywiki
+Tiddler
+p747
+(dp748
+g21
+VThis is the slot closest to the wall on the right of the inscription.<br><br>\u000a\u000a@@color:brown;Wood@@: <<print $slotE>> <br><br>\u000a\u000a<<if $slotE is not "Empty">>\u000a	[[Remove the current plate|Remove wood]]<br>\u000a<<else>>\u000a	<<if $inv.indexOf("Azure Dragon Plate") gte 0>> \u000a		[[Insert the Azure Dragon Plate|Insert wood][$slotE to "Azure Dragon Plate"]]<br>\u000a		<</if>>\u000a	<<if $inv.indexOf("Black Tortoise Plate") gte 0>>\u000a		[[Insert the Black Tortoise Plate|Insert wood][$slotE to "Black Tortoise Plate"]]<br><</if>>\u000a	<<if $inv.indexOf("Vermilion Bird Plate") gte 0>>\u000a		[[Insert the Vermilion Bird Plate|Insert wood][$slotE to "Vermilion Bird Plate"]]<br><</if>>\u000a	<<if $inv.indexOf("White Tiger Plate") gte 0>>\u000a		[[Insert the White Tiger Plate|Insert wood][$slotE to "White Tiger Plate"]]<br><</if>>\u000a<</if>>\u000a\u000a[[Return|insert slots]]
+p749
+sg23
+VwoodE
+p750
+sg25
+g26
+((I2017
+I2
+I4
+I2
+I11
+I21
+I5
+I35
+I0
+tp751
+(dp752
+tp753
+Rp754
+sg31
+(lp755
+Vnobr
+p756
+asg33
+g26
+((I2017
+I2
+I4
+I0
+I46
+I29
+I5
+I35
+I0
+tp757
+(dp758
+tp759
+Rp760
+sbsa(dp761
+g14
+I00
+sg15
+(lp762
+F3998.49599999998
+aF734.2979999999999
+asg17
+(itiddlywiki
+Tiddler
+p763
+(dp764
+g21
+VThis is the slot closest to the wall to the left of the inscription.<br><br>\u000a\u000a@@color:yellow;Metal@@: <<print $slotW>> <br><br>\u000a\u000a<<if $slotW is not "Empty">>\u000a	[[Remove the current plate|Remove metal]]<br>\u000a<<else>>\u000a	<<if $inv.indexOf("Azure Dragon Plate") gte 0>> \u000a		[[Insert the Azure Dragon Plate|Insert metal][$slotW to "Azure Dragon Plate"]]<br>\u000a		<</if>>\u000a	<<if $inv.indexOf("Black Tortoise Plate") gte 0>>\u000a		[[Insert the Black Tortoise Plate|Insert metal][$slotW to "Black Tortoise Plate"]]<br><</if>>\u000a	<<if $inv.indexOf("Vermilion Bird Plate") gte 0>>\u000a		[[Insert the Vermilion Bird Plate|Insert metal][$slotW to "Vermilion Bird Plate"]]<br><</if>>\u000a	<<if $inv.indexOf("White Tiger Plate") gte 0>>\u000a		[[Insert the White Tiger Plate|Insert metal][$slotW to "White Tiger Plate"]]<br><</if>>\u000a<</if>>\u000a\u000a[[Return|insert slots]]
+p765
+sg23
+VmetalW
+p766
+sg25
+g26
+((I2017
+I2
+I4
+I1
+I57
+I38
+I5
+I35
+I0
+tp767
+(dp768
+tp769
+Rp770
+sg31
+(lp771
+Vnobr
+p772
+asg33
+g26
+((I2017
+I2
+I4
+I0
+I46
+I29
+I5
+I35
+I0
+tp773
+(dp774
+tp775
+Rp776
+sbsa(dp777
+g14
+I00
+sg15
+(lp778
+F3048.213999999999
+aF778.1120000000001
+asg17
+(itiddlywiki
+Tiddler
+p779
+(dp780
+g21
+VYou move closer to the mysterious liquid. If it flows like water, then maybe you can drink it like water.\u000a\u000a[[Drink from the crevice|Drink Mercury]]\u000a[[Ignore it, what even got over you?|circle construct]]
+p781
+sg23
+Vmysterious metallic liquid
+p782
+sg25
+g26
+((I2017
+I2
+I4
+I1
+I7
+I25
+I5
+I35
+I0
+tp783
+(dp784
+tp785
+Rp786
+sg31
+(lp787
+sg33
+g26
+((I2017
+I2
+I4
+I1
+I5
+I59
+I5
+I35
+I0
+tp788
+(dp789
+tp790
+Rp791
+sbsa(dp792
+g14
+I00
+sg15
+(lp793
+F3265.783999999997
+aF779.6320000000005
+asg17
+(itiddlywiki
+Tiddler
+p794
+(dp795
+g21
+VYou stick your tongue into the crevice and lick a bit of it off. Maybe with such a mysterious substance you can gain immortality or something. <br><br>\u000a\u000aAs soon as you thought that, you start feeling awful. You quickly realize your mistake as you \u000a\u000a<<set $health to $health - 7>> \u000a<<if $health lte 0>>\u000apainfully pass out. Your adventure has ended here.\u000a<<else>>\u000afeel intense stomach pains and begin vomitting. That was an incredibly bad idea but you are lucky that you survived.<br><br>\u000a\u000a[[Get back up|circle construct]]\u000a<</if>>
+p796
+sg23
+VDrink Mercury
+p797
+sg25
+g26
+((I2017
+I2
+I4
+I1
+I13
+I8
+I5
+I35
+I0
+tp798
+(dp799
+tp800
+Rp801
+sg31
+(lp802
+Vnobr
+p803
+asg33
+g26
+((I2017
+I2
+I4
+I1
+I7
+I28
+I5
+I35
+I0
+tp804
+(dp805
+tp806
+Rp807
+sbsa(dp808
+g14
+I00
+sg15
+(lp809
+F4368.403999999999
+aF777.2860000000003
+asg17
+(itiddlywiki
+Tiddler
+p810
+(dp811
+g21
+VYou remove the <<print $slotN>> from the slot.\u000a<<set $inv.push($slotN)>>\u000a<<print $slotN>> has been added to your inventory.\u000a<<set $slotN to "Empty">>\u000a[[Return|insert slots]]
+p812
+sg23
+VRemove water
+p813
+sg25
+g26
+((I2017
+I2
+I4
+I1
+I58
+I40
+I5
+I35
+I0
+tp814
+(dp815
+tp816
+Rp817
+sg31
+(lp818
+sg33
+g26
+((I2017
+I2
+I4
+I1
+I29
+I41
+I5
+I35
+I0
+tp819
+(dp820
+tp821
+Rp822
+sbsa(dp823
+g14
+I00
+sg15
+(lp824
+F4384.066000000005
+aF1136.2240000000008
+asg17
+(itiddlywiki
+Tiddler
+p825
+(dp826
+g21
+VYou insert the <<print $slotN>> into the slot.\u000a<<set $inv.remove($slotN)>>\u000a<<print $slotN>> has been removed from your inventory.\u000a\u000a[[Return|insert slots]]
+p827
+sg23
+VInsert water
+p828
+sg25
+g26
+((I2017
+I2
+I4
+I1
+I58
+I44
+I5
+I35
+I0
+tp829
+(dp830
+tp831
+Rp832
+sg31
+(lp833
+sg33
+g26
+((I2017
+I2
+I4
+I1
+I29
+I41
+I5
+I35
+I0
+tp834
+(dp835
+tp836
+Rp837
+sbsa(dp838
+g14
+I00
+sg15
+(lp839
+F3993.4999999999977
+aF968.1380000000001
+asg17
+(itiddlywiki
+Tiddler
+p840
+(dp841
+g21
+V<<if $slotN is "Black Tortoise Plate" and $slotE is "Azure Dragon Plate" and $slotS is "Vermilion Bird Plate" and $slotW is "White Tiger Plate" and $hasFakeTiger is false>>\u000aAs you click the last plate into the slot, the circular construct begins to rumble. The golden serpentine dragon that was circling in the heavens above begins his descent, spiraling clockwise towards the compass.<br><br>\u000a\u000aAs the dragon spiraled closer, the ceiling appears to open up and reveal another passage. Soon, the dragon's bodycompletely spiraled upwards, coiled around the circular construct in such a manner where its body forms a spiral staircase. It would appear as though that is your final destination; there is no turning back now. <br><br>\u000a\u000a[[Climb up the dragon's body|Final Climb]]\u000a<<else>>\u000a<center>Slots</center><hr>\u000a@@color:blue;Water@@: <<print $slotN>><br>\u000a@@color:brown;Wood@@: <<print $slotE>><br>\u000a@@color:red;Fire@@: <<print $slotS>><br>\u000a@@color:yellow;Metal@@: <<print $slotW>><br>\u000a<br>\u000a[[Change the water slot|waterN]]<br>\u000a[[Change the wood slot|woodE]]<br>\u000a[[Change the fire slot|fireS]]<br>\u000a[[Change the metal slot|metalW]]<br>\u000a[[Return|circle construct]]<br>\u000a<</if>>
+p842
+sg23
+Vinsert slots
+p843
+sg25
+g26
+((I2017
+I2
+I4
+I22
+I5
+I51
+I5
+I35
+I0
+tp844
+(dp845
+tp846
+Rp847
+sg31
+(lp848
+Vnobr
+p849
+asg33
+g26
+((I2017
+I2
+I4
+I1
+I31
+I5
+I5
+I35
+I0
+tp850
+(dp851
+tp852
+Rp853
+sbsa(dp854
+g14
+I00
+sg15
+(lp855
+F4201.838000000035
+aF573.1840000000004
+asg17
+(itiddlywiki
+Tiddler
+p856
+(dp857
+g21
+VYou insert the <<print $slotW>> into the slot.\u000a<<set $inv.remove($slotW)>>\u000a<<print $slotW>> has been removed from your inventory.\u000a\u000a[[Return|insert slots]]
+p858
+sg23
+VInsert metal
+p859
+sg25
+g26
+((I2017
+I2
+I4
+I2
+I6
+I0
+I5
+I35
+I0
+tp860
+(dp861
+tp862
+Rp863
+sg31
+(lp864
+sg33
+g26
+((I2017
+I2
+I4
+I1
+I56
+I28
+I5
+I35
+I0
+tp865
+(dp866
+tp867
+Rp868
+sbsa(dp869
+g14
+I00
+sg15
+(lp870
+F3811.6420000000285
+aF580.2220000000003
+asg17
+(itiddlywiki
+Tiddler
+p871
+(dp872
+g21
+VYou remove the <<print $slotW>> from the slot.\u000a<<set $inv.push($slotW)>>\u000a<<print $slotW>> has been added to your inventory.\u000a<<set $slotW to "Empty">>\u000a[[Return|insert slots]]
+p873
+sg23
+VRemove metal
+p874
+sg25
+g26
+((I2017
+I2
+I4
+I1
+I58
+I28
+I5
+I35
+I0
+tp875
+(dp876
+tp877
+Rp878
+sg31
+(lp879
+sg33
+g26
+((I2017
+I2
+I4
+I1
+I56
+I28
+I5
+I35
+I0
+tp880
+(dp881
+tp882
+Rp883
+sbsa(dp884
+g14
+I00
+sg15
+(lp885
+F3551.995999999996
+aF1124.4940000000008
+asg17
+(itiddlywiki
+Tiddler
+p886
+(dp887
+g21
+VYou insert the <<print $slotS>> into the slot.\u000a<<set $inv.remove($slotS)>>\u000a<<print $slotS>> has been removed from your inventory.\u000a\u000a[[Return|insert slots]]
+p888
+sg23
+VInsert fire
+p889
+sg25
+g26
+((I2017
+I2
+I4
+I2
+I3
+I29
+I5
+I35
+I0
+tp890
+(dp891
+tp892
+Rp893
+sg31
+(lp894
+sg33
+g26
+((I2017
+I2
+I4
+I2
+I2
+I52
+I5
+I35
+I0
+tp895
+(dp896
+tp897
+Rp898
+sbsa(dp899
+g14
+I00
+sg15
+(lp900
+F3555.928000000007
+aF826.5520000000004
+asg17
+(itiddlywiki
+Tiddler
+p901
+(dp902
+g21
+VYou remove the <<print $slotS>> from the slot.\u000a<<set $inv.push($slotS)>>\u000a<<print $slotS>> has been added to your inventory.\u000a<<set $slotS to "Empty">>\u000a[[Return|insert slots]]
+p903
+sg23
+VRemove fire
+p904
+sg25
+g26
+((I2017
+I2
+I4
+I2
+I3
+I12
+I5
+I35
+I0
+tp905
+(dp906
+tp907
+Rp908
+sg31
+(lp909
+sg33
+g26
+((I2017
+I2
+I4
+I2
+I2
+I52
+I5
+I35
+I0
+tp910
+(dp911
+tp912
+Rp913
+sbsa(dp914
+g14
+I00
+sg15
+(lp915
+F4171.34000000003
+aF1394.2840000000012
+asg17
+(itiddlywiki
+Tiddler
+p916
+(dp917
+g21
+VYou insert the <<print $slotE>> into the slot.\u000a<<set $inv.remove($slotE)>>\u000a<<print $slotE>> has been removed from your inventory.\u000a\u000a[[Return|insert slots]]
+p918
+sg23
+VInsert wood
+p919
+sg25
+g26
+((I2017
+I2
+I4
+I2
+I6
+I15
+I5
+I35
+I0
+tp920
+(dp921
+tp922
+Rp923
+sg31
+(lp924
+sg33
+g26
+((I2017
+I2
+I4
+I2
+I5
+I49
+I5
+I35
+I0
+tp925
+(dp926
+tp927
+Rp928
+sbsa(dp929
+g14
+I00
+sg15
+(lp930
+F3802.2580000000225
+aF1384.900000000001
+asg17
+(itiddlywiki
+Tiddler
+p931
+(dp932
+g21
+VYou remove the <<print $slotE>> from the slot.\u000a<<set $inv.push($slotE)>>\u000a<<print $slotE>> has been added to your inventory.\u000a<<set $slotE to "Empty">>\u000a[[Return|insert slots]]
+p933
+sg23
+VRemove wood
+p934
+sg25
+g26
+((I2017
+I2
+I4
+I2
+I6
+I37
+I5
+I35
+I0
+tp935
+(dp936
+tp937
+Rp938
+sg31
+(lp939
+sg33
+g26
+((I2017
+I2
+I4
+I2
+I5
+I49
+I5
+I35
+I0
+tp940
+(dp941
+tp942
+Rp943
+sbsa(dp944
+g14
+I00
+sg15
+(lp945
+F522.630666666667
+aF974.5946666666669
+asg17
+(itiddlywiki
+Tiddler
+p946
+(dp947
+g21
+VYou push past the bushes and foliage, making your way to the cave entrance. As you peek your head into the cave, the light around you fades into the darkness.<br> \u000a<<nobr>><div id = "faded"> Slowly, the world around you is covered by blackness. Luckily, you brought your flashlight with you. Regardless, it is still quite dangerous to go inside.</div><</nobr>>\u000a[[Turn on your flashlight and head inside|Cave Passage]]\u000a[[Back away from the cave|Nope]]\u000a<<nobr>><<audio grassSteps play>><</nobr>>
+p948
+sg23
+VCave Entrance
+p949
+sg25
+g26
+((I2017
+I3
+I12
+I17
+I12
+I13
+I6
+I71
+I1
+tp950
+(dp951
+tp952
+Rp953
+sg31
+(lp954
+sg33
+g26
+((I2017
+I2
+I4
+I19
+I36
+I31
+I5
+I35
+I0
+tp955
+(dp956
+tp957
+Rp958
+sbsa(dp959
+g14
+I00
+sg15
+(lp960
+F287.9499999999992
+aF1159.6840000000007
+asg17
+(itiddlywiki
+Tiddler
+p961
+(dp962
+g21
+VYou ignore the cave and continue on.\u000a\u000aCasually wandering into a cave is quite dangerous, and you still have stuff to do anyway.\u000a\u000aYour adventure has ended before it even begun.
+p963
+sg23
+VNope
+p964
+sg25
+g26
+((I2017
+I2
+I4
+I19
+I37
+I15
+I5
+I35
+I0
+tp965
+(dp966
+tp967
+Rp968
+sg31
+(lp969
+sg33
+g26
+((I2017
+I2
+I4
+I19
+I36
+I31
+I5
+I35
+I0
+tp970
+(dp971
+tp972
+Rp973
+sbsa(dp974
+g14
+I00
+sg15
+(lp975
+F746.4373333333325
+aF973.607333333335
+asg17
+(itiddlywiki
+Tiddler
+p976
+(dp977
+g21
+V<div id="light"></div><div id="lightEdge"></div><div class="content">	You continue walking forth into the cave. The path before you seems to span endlessly as you go deeper and deeper into the cave. All you see in never ending span of darkness. Darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness and more darkness. Eventually, the endless expanse ends as you come across an opening to what appears to be a <a style="color:black" data-passage="Landmark"><u> large chamber</u></a>\u000a</div>     \u000a<<nobr>><<audio outside fadeout>>\u000a<<audio cave volume 0.25 fadein loop>><</nobr>>
+p978
+sg23
+VCave Passage
+p979
+sg25
+g26
+((I2017
+I3
+I14
+I19
+I40
+I50
+I1
+I73
+I1
+tp980
+(dp981
+tp982
+Rp983
+sg31
+(lp984
+Vcave,
+p985
+aVnobr
+p986
+asg33
+g26
+((I2017
+I2
+I4
+I19
+I46
+I51
+I5
+I35
+I0
+tp987
+(dp988
+tp989
+Rp990
+sbsa(dp991
+g14
+I00
+sg15
+(lp992
+F994.8559999999995
+aF969.286666666667
+asg17
+(itiddlywiki
+Tiddler
+p993
+(dp994
+g21
+V<div id="light"></div><div id="lightEdge"></div><div class="content">	You walk into an extremely large cavern chamber. Stalagtites dangle down from the ceiling, dripping water onto the damp floor below. You spot what appears to be <a style="color:black" data-passage="Lake Waterfall"><u>flowing water</u></a> off to the left side. Following the water could be a good idea if you are unsure of where you are going. If in doubt, you can always just follow the water back here.\u000a\u000aOpposite of that, you see a hole carved into the rock. It appears to be manmade. It could be a good idea to follow a <a style="color:black" data-passage="Human Passage"><u>manmade passage</u></a> as it will lead to a clear destination, but it could also be quite dangerous. Who knows what <<mousegoto "traps">>traps<</mousegoto>> lay beyond.\u000a</div>
+p995
+sg23
+VLandmark
+p996
+sg25
+g26
+((I2017
+I3
+I14
+I19
+I40
+I24
+I1
+I73
+I1
+tp997
+(dp998
+tp999
+Rp1000
+sg31
+(lp1001
+Vcave
+p1002
+asg33
+g26
+((I2017
+I2
+I4
+I20
+I17
+I50
+I5
+I35
+I0
+tp1003
+(dp1004
+tp1005
+Rp1006
+sbsa(dp1007
+g14
+I00
+sg15
+(lp1008
+F992.5099999999995
+aF736.8513333333334
+asg17
+(itiddlywiki
+Tiddler
+p1009
+(dp1010
+g21
+V<div id="light"></div><div id="lightEdge"></div><div class="content">	In your sights now is a river of water, its trail flowing down into the darkness. Further along, you see an easily <a style="color:black" data-passage="Herb"><u>climbable wall</u></a> in the distance. There might be something useful up there so it won't hurt to check it out. There is a sturdy looking stalagmite along the edge of the drop. \u000a\u000a<<if $ropeBasin is true>>\u000aYou tied a rope here earlier, so you can <a style="color:black" data-passage="Basin"><u>rappel down</u></a> pretty easily.<br><br>\u000a\u000a<<else>>\u000a	<<if $inv.indexOf("Rope") gte 0>>\u000a	You can probably <a style="color:black" data-passage="RopeBasin"><u>tie a rope</u></a> on this stalagmite to rappel yourself down.<br><br>\u000a	<<else>>\u000a	If you had a rope you can tie it on this to rappel down.<br><br>\u000a	<</if>>\u000a<</if>>\u000a<a style="color:black" data-passage="JumpBasin"><u>Jump off the riverfall</u></a><br>\u000a<a style="color:black" data-passage="Landmark"><u>Return to the central cavern</u></a>\u000a</div>
+p1011
+sg23
+VLake Waterfall
+p1012
+sg25
+g26
+((I2017
+I3
+I16
+I20
+I34
+I36
+I3
+I75
+I1
+tp1013
+(dp1014
+tp1015
+Rp1016
+sg31
+(lp1017
+Vcave,
+p1018
+aVnobr
+p1019
+asg33
+g26
+((I2017
+I2
+I4
+I20
+I33
+I51
+I5
+I35
+I0
+tp1020
+(dp1021
+tp1022
+Rp1023
+sbsa(dp1024
+g14
+I00
+sg15
+(lp1025
+F983.7593333333338
+aF1387.654666666667
+asg17
+(itiddlywiki
+Tiddler
+p1026
+(dp1027
+g21
+V<div id="light"></div><div id="lightEdge"></div><div class="content">	Having navigated through the passage, you come across what looks like a resting room. There are ancient looking chairs, tables, bowls, and other miscellaneous furniture scattered about. Many of them are worn to the point of unusuability. In the middle, there is a <a style="color:black" data-passage="Spiral passage"><u>spiral-looking passageway</u></a> dug straight into the stone floor. Off to the side, there appears to be a <a style="color:black" data-passage="Rope room"><u>supply room</u></a> carved straight into the wall. \u000a\u000a<a style="color:black" data-passage="Human Pass Return"><u>Return to the cavern entrance</u></a>\u000a</div>
+p1028
+sg23
+VHuman Room
+p1029
+sg25
+g26
+((I2017
+I3
+I14
+I19
+I40
+I10
+I1
+I73
+I1
+tp1030
+(dp1031
+tp1032
+Rp1033
+sg31
+(lp1034
+Vcave
+p1035
+asg33
+g26
+((I2017
+I2
+I4
+I20
+I33
+I51
+I5
+I35
+I0
+tp1036
+(dp1037
+tp1038
+Rp1039
+sbsa(dp1040
+g14
+I00
+sg15
+(lp1041
+F565.3833333333333
+aF1391.8946666666652
+asg17
+(itiddlywiki
+Tiddler
+p1042
+(dp1043
+g21
+V<div id="light"></div><div id="lightEdge"></div><div class="content">Equipment lay scattered across the floor. Might as well look around for something useful.<br><br>\u000a\u000a<a style="color:black" data-passage="Human Room"><u>Return</u></a>\u000a\u000a<div class="pos1"><a style="color:black" data-passage="Broken"><u>Pickaxe</u></a></div>\u000a\u000a<div class="pos2"><a style="color:black" data-passage="Broken"><u>Hammer</u></a></div>\u000a\u000a<div class="pos3"><a style="color:black" data-passage="Broken"><u>Shovel</u></a></div>\u000a\u000a<div class="pos4"><a style="color:black" data-passage="Broken"><u>Bucket</u></a></div>\u000a\u000a<div class="pos5"><a style="color:black" data-passage="Broken"><u>Chisel</u></a></div>\u000a\u000a<div class="pos6"><a style="color:black" data-passage="Broken"><u>Handaxe</u></a></div>\u000a\u000a<<if $ropeGet is false>>\u000a<div class="pos7"><a style="color:black" data-passage="RopeGet"><u>Rope</u></a></div>\u000a<</if>>\u000a\u000a</div>
+p1044
+sg23
+VRope room
+p1045
+sg25
+g26
+((I2017
+I3
+I14
+I19
+I37
+I13
+I1
+I73
+I1
+tp1046
+(dp1047
+tp1048
+Rp1049
+sg31
+(lp1050
+Vcave,
+p1051
+aVnobr
+p1052
+asg33
+g26
+((I2017
+I2
+I4
+I20
+I35
+I9
+I5
+I35
+I0
+tp1053
+(dp1054
+tp1055
+Rp1056
+sbsa(dp1057
+g14
+I00
+sg15
+(lp1058
+F1426.8659999999977
+aF1376.2153333333351
+asg17
+(itiddlywiki
+Tiddler
+p1059
+(dp1060
+g21
+V<div id="light"></div><div id="lightEdge"></div><div class="content">\u000aYou walk <<if previous() is "Gate">> up <<else>> down <</if>> the spiraling passageway. Due to its age, there are some small hazards that developed. Better be careful when navigating through here. <br><br>\u000a\u000a<<if previous() is "Gate">><a style="color:black" data-passage="Human Room"><u>Continue up</u></a>\u000a<<else>> <a style="color:black" data-passage="Gate"><u>Continue down</u></a> <</if>>\u000a</div>
+p1061
+sg23
+VSpiral passage
+p1062
+sg25
+g26
+((I2017
+I3
+I14
+I19
+I41
+I24
+I1
+I73
+I1
+tp1063
+(dp1064
+tp1065
+Rp1066
+sg31
+(lp1067
+Vcave,
+p1068
+aVnobr
+p1069
+asg33
+g26
+((I2017
+I2
+I4
+I20
+I35
+I26
+I5
+I35
+I0
+tp1070
+(dp1071
+tp1072
+Rp1073
+sbsa(dp1074
+g14
+I00
+sg15
+(lp1075
+F1431.4946666666656
+aF526.8626666666668
+asg17
+(itiddlywiki
+Tiddler
+p1076
+(dp1077
+g21
+V<<audio splash play>>\u000a<div id="light"></div><div id="lightEdge"></div><div class="content">	\u000a<<set $health to $health - 5>>\u000aYou land in a basin of water at the center of this room. \u000a<<if $health lte 0>>\u000a<br><br>Unfortunately you never make it out of the basin. Your journey has ended here.\u000a<<else>> It was painful, but luckily the fall was broken by the water rather than the floor. Fortunately, your flashlight is water resistant so it survived, as well. You swim your way over to the nearby land recompose yourself.<br><br>\u000a\u000a<a style="color:black" data-passage="Basin"><u>Survey the room</u></a>\u000a<</if>>\u000a</div>
+p1078
+sg23
+VBasin Landing
+p1079
+sg25
+g26
+((I2017
+I3
+I14
+I19
+I41
+I8
+I1
+I73
+I1
+tp1080
+(dp1081
+tp1082
+Rp1083
+sg31
+(lp1084
+Vcave,
+p1085
+aVnobr
+p1086
+asg33
+g26
+((I2017
+I2
+I4
+I20
+I35
+I32
+I5
+I35
+I0
+tp1087
+(dp1088
+tp1089
+Rp1090
+sbsa(dp1091
+g14
+I00
+sg15
+(lp1092
+F1419.4566666666653
+aF981.2440000000004
+asg17
+(itiddlywiki
+Tiddler
+p1093
+(dp1094
+g21
+V<div id="light"></div><div id="lightEdge"></div><div class="content">\u000a<<if previous() is "Basin">>\u000aYou arrive in a large room. There is a <a style="color:black" data-passage="Spiral passage"><u>passage entrance</u></a> directly in front of you. When you peer into the passage, you see that it spirals upwards. To your left is an elaborate looking <a style="color:black" data-passage="Open Gate"><u>stone gate</u></a>. Its design makes it seem like it is the entrance of a tomb or something.<br><br>\u000a\u000a<a style="color:black" data-passage="Basin"><u>Return to the basin</u></a>\u000a<</if>>\u000a\u000a<<if previous() is "Spiral passage">>\u000aYou arrive in a large room. You hear the <a style="color:black" data-passage="Basin"><u>sound of water</u></a> from the passage in front of you. To your right is an elaborate looking <a style="color:black" data-passage="Open Gate"><u>stone gate</u></a>. Its design makes it seem like it is the entrance of a tomb or something.<br><br>\u000a\u000a<a style="color:black" data-passage="Spiral passage"><u>Climb back up the spiraling passage</u></a>\u000a<</if>>\u000a\u000a<<if previous() is "Open Gate">>\u000aAs you take a couple steps back from the <a style="color:black" data-passage="Open Gate"><u>gate</u></a>. The gate now stands before you. You hear the <a style="color:black" data-passage="Basin"><u>sound of water</u></a> from the left. When you peer into the <a style="color:black" data-passage="Spiral passage"><u>passage</u></a> to your right. When you peer into the passage, you see that it goes upward.<br><br>\u000a<</if>>\u000a</div>
+p1095
+sg23
+VGate
+p1096
+sg25
+g26
+((I2017
+I3
+I14
+I19
+I41
+I27
+I1
+I73
+I1
+tp1097
+(dp1098
+tp1099
+Rp1100
+sg31
+(lp1101
+Vcave,
+p1102
+aVnobr
+p1103
+asg33
+g26
+((I2017
+I2
+I4
+I20
+I35
+I54
+I5
+I35
+I0
+tp1104
+(dp1105
+tp1106
+Rp1107
+sbsa(dp1108
+g14
+I00
+sg15
+(lp1109
+F5062.820000000004
+aF967.3120000000004
+asg17
+(itiddlywiki
+Tiddler
+p1110
+(dp1111
+g21
+VYou take the orb. It has quite the mysterious feeling in your hand. It looks entirely liquid, yet is solid and cold to the touch.\u000a<<set $inv.push("King's Symbol")>>\u000aKing's Symbol has been added to your inventory.\u000a\u000a@@.shake;The moment you place it into your inventory, the entire tomb begins to shake. It is just like your intuation expected. The entire place is going to collapse!\u000a\u000a[[Run down to the central courtyard|Escape Courtyard][$timer to $timer + time()]]@@\u000a\u000a<<nobr>><<set $timer to 0>>\u000a<<audio cave fadeout>>\u000a<<audio quake play>><</nobr>>
+p1112
+sg23
+VTake the orb
+p1113
+sg25
+g26
+((I2017
+I3
+I12
+I22
+I20
+I37
+I6
+I71
+I1
+tp1114
+(dp1115
+tp1116
+Rp1117
+sg31
+(lp1118
+sg33
+g26
+((I2017
+I2
+I4
+I20
+I36
+I45
+I5
+I35
+I0
+tp1119
+(dp1120
+tp1121
+Rp1122
+sbsa(dp1123
+g14
+I00
+sg15
+(lp1124
+F5052.676000000014
+aF1178.4520000000007
+asg17
+(itiddlywiki
+Tiddler
+p1125
+(dp1126
+g21
+VYou decide not to take the orb and leave the room.\u000a\u000a<center>>@@.telepathy;""Very well. If that is your decision then I will respect it. Take this instead."</center>\u000aIn front of you materializes a jade carving of a serpentine dragon. The statue intricately carved out of a slab of jade, so it holds an incredible value. You decide to take it and return home.@@ <<set $inv.push("Jade Dragon")>>\u000a\u000a[[Continue|Peace End]]
+p1127
+sg23
+VLeave the orb
+p1128
+sg25
+g26
+((I2017
+I2
+I5
+I19
+I0
+I12
+I6
+I36
+I0
+tp1129
+(dp1130
+tp1131
+Rp1132
+sg31
+(lp1133
+sg33
+g26
+((I2017
+I2
+I4
+I20
+I36
+I45
+I5
+I35
+I0
+tp1134
+(dp1135
+tp1136
+Rp1137
+sbsa(dp1138
+g14
+I00
+sg15
+(lp1139
+F5050.9380000000465
+aF1416.9840000000004
+asg17
+(itiddlywiki
+Tiddler
+p1140
+(dp1141
+g21
+VYou make your way out of the tomb. The gate which had been closed upon entry is now open. You navigate yourself out of the cavern and reach the light of the outside world. As you have been undergroudn for so long, the light stings your eyes as you gaze into the sky. \u000a\u000aYou make your way back onto the main road. You have made your way through a cavern, into the tomb of a lost king, and was given a prize by the king himself. Feeling proud, you return home and place the jade dragon on your table. It will serve as an excellent memory for the adventures you experienced today.\u000a\u000a<center><h1>The End</h1></center>
+p1142
+sg23
+VPeace End
+p1143
+sg25
+g26
+((I2017
+I2
+I4
+I23
+I12
+I14
+I5
+I35
+I0
+tp1144
+(dp1145
+tp1146
+Rp1147
+sg31
+(lp1148
+sg33
+g26
+((I2017
+I2
+I4
+I20
+I36
+I56
+I5
+I35
+I0
+tp1149
+(dp1150
+tp1151
+Rp1152
+sbsa(dp1153
+g14
+I00
+sg15
+(lp1154
+F5796.548666666694
+aF1202.8820000000003
+asg17
+(itiddlywiki
+Tiddler
+p1155
+(dp1156
+g21
+V@@.shake;Accepting that you are now trapped, you wait for the tomb to collapse on itself. You had an amazing journey up until now, but this is the end. \u000a\u000aMaybe if you had hurried, you could have made it. You close your eyes and wait as debris falls and crushes you to death.@@\u000a\u000a<center><h1>@@color:red;Dead End@@</h1></center>
+p1157
+sg23
+VTrapped End
+p1158
+sg25
+g26
+((I2017
+I2
+I5
+I19
+I9
+I23
+I6
+I36
+I0
+tp1159
+(dp1160
+tp1161
+Rp1162
+sg31
+(lp1163
+sg33
+g26
+((I2017
+I2
+I4
+I20
+I37
+I6
+I5
+I35
+I0
+tp1164
+(dp1165
+tp1166
+Rp1167
+sbsa(dp1168
+g14
+I00
+sg15
+(lp1169
+F990.3833333333323
+aF533.2213333333332
+asg17
+(itiddlywiki
+Tiddler
+p1170
+(dp1171
+g21
+V<div id="light"></div><div id="lightEdge"></div><div class="content"><<if $gotHerb is false>>After climbing the wall, you are faced with a small platform-like plateau. There might be <span class="herb"  data-passage="getHerb">something</span> around that may help.<<else>>There does not seem to be anything up here anymore.<</if>><br><br>\u000a\u000a<a style="color:black" data-passage="Lake Waterfall"><u>Climb back down</u></a>\u000a</div>
+p1172
+sg23
+VHerb
+p1173
+sg25
+g26
+((I2017
+I3
+I16
+I20
+I38
+I21
+I3
+I75
+I1
+tp1174
+(dp1175
+tp1176
+Rp1177
+sg31
+(lp1178
+Vcave,
+p1179
+aVnobr
+p1180
+asg33
+g26
+((I2017
+I2
+I4
+I20
+I48
+I17
+I5
+I35
+I0
+tp1181
+(dp1182
+tp1183
+Rp1184
+sbsa(dp1185
+g14
+I00
+sg15
+(lp1186
+F1226.0513333333326
+aF745.0233333333335
+asg17
+(itiddlywiki
+Tiddler
+p1187
+(dp1188
+g21
+VYou tie a rope to the nearby stalagmite and dangle it down into the darkness. <<set $ropeBasin to true>>\u000a\u000aRope has been removed from your inventory.<<set $inv.remove("Rope")>>\u000a\u000a[[Return|Lake Waterfall]]\u000a
+p1189
+sg23
+VRopeBasin
+p1190
+sg25
+g26
+((I2017
+I3
+I14
+I20
+I1
+I43
+I1
+I73
+I1
+tp1191
+(dp1192
+tp1193
+Rp1194
+sg31
+(lp1195
+sg33
+g26
+((I2017
+I2
+I4
+I20
+I56
+I14
+I5
+I35
+I0
+tp1196
+(dp1197
+tp1198
+Rp1199
+sbsa(dp1200
+g14
+I00
+sg15
+(lp1201
+F1220.8319999999997
+aF529.2086666666665
+asg17
+(itiddlywiki
+Tiddler
+p1202
+(dp1203
+g21
+V<div id="light"></div><div id="lightEdge"></div><div class="content">	For some reason, you decide to jump into the darkness below. For your survival, you hope that the fall is not as deep as it looks.<br><br>\u000a\u000a<a style="color:black" data-passage="Basin Landing"><u>Continue falling</u></a>\u000a</div>
+p1204
+sg23
+VJumpBasin
+p1205
+sg25
+g26
+((I2017
+I3
+I14
+I19
+I41
+I2
+I1
+I73
+I1
+tp1206
+(dp1207
+tp1208
+Rp1209
+sg31
+(lp1210
+Vcave,
+p1211
+aVnobr
+p1212
+asg33
+g26
+((I2017
+I2
+I4
+I20
+I56
+I14
+I5
+I35
+I0
+tp1213
+(dp1214
+tp1215
+Rp1216
+sbsa(dp1217
+g14
+I00
+sg15
+(lp1218
+F1420.2879999999975
+aF813.5180000000005
+asg17
+(itiddlywiki
+Tiddler
+p1219
+(dp1220
+g21
+V<div id="light"></div><div id="lightEdge"></div><div class="content">\u000aYou are in an incredible large chamber with a lake of water in the middle. This is where the water from above is flowing down. Unfortunately, water does not look too drinkable. It does not look like you can progress past the basin.\u000a\u000a<<if $ropeBasin is true>>\u000a<br><br>The <a style="color:black" data-passage="Lake Waterfall"><u>rope</u></a> you laid down from above is dangling off the side of the wall.<br><br>\u000a<</if>>\u000a\u000a<<if previous() is "Gate">>\u000a	<br><br><a style="color:black" data-passage="Gate"><u>Return to the gate</u></a><br>\u000a<<else>>\u000a	There appears to only be one <a style="color:black" data-passage="Gate"><u>path</u></a> out of here.<br><br>\u000a<</if>>\u000a<<if $ropeBasin is true>><br><</if>>\u000a</div>
+p1221
+sg23
+VBasin
+p1222
+sg25
+g26
+((I2017
+I3
+I14
+I19
+I41
+I12
+I1
+I73
+I1
+tp1223
+(dp1224
+tp1225
+Rp1226
+sg31
+(lp1227
+Vcave,
+p1228
+aVnobr
+p1229
+asg33
+g26
+((I2017
+I2
+I4
+I21
+I13
+I36
+I5
+I35
+I0
+tp1230
+(dp1231
+tp1232
+Rp1233
+sbsa(dp1234
+g14
+I00
+sg15
+(lp1235
+F1697.568000000001
+aF986.9313333333331
+asg17
+(itiddlywiki
+Tiddler
+p1236
+(dp1237
+g21
+V<div id="light"></div><div id="lightEdge"></div><div class="content">\u000aYou approach the gate. There are several carvings on the elaborate stone door. You see that its designs are split into four quadrants. Going clockwise, you see that there is a tortoise, dragon, phoenix, and tiger carved into the stone gate. You get the feeling that once you enter this gate, there will be no turning back.<br><br>\u000a\u000a<a style="color:black" data-passage="Rubble Path"><u>Push open the gate</u></a><br>\u000a<a style="color:black" data-passage="Gate"><u>Step away from the gate</u></a>\u000a</div>\u000a
+p1238
+sg23
+VOpen Gate
+p1239
+sg25
+g26
+((I2017
+I3
+I14
+I19
+I41
+I33
+I1
+I73
+I1
+tp1240
+(dp1241
+tp1242
+Rp1243
+sg31
+(lp1244
+Vcave,
+p1245
+aVnobr
+p1246
+asg33
+g26
+((I2017
+I2
+I4
+I21
+I53
+I5
+I5
+I35
+I0
+tp1247
+(dp1248
+tp1249
+Rp1250
+sbsa(dp1251
+g14
+I00
+sg15
+(lp1252
+F4606.935999999994
+aF965.7919999999999
+asg17
+(itiddlywiki
+Tiddler
+p1253
+(dp1254
+g21
+VYou climb the dragon's body upwards towards the heavens. Eventually, you come across an entrance. You have found the room where a long lost king was laid to rest.\u000a\u000a<<if $inv.indexOf("King's Talisman") gte 0>>[[Continue|AltChamber]]<<else>>[[Continue|Final Chamber]]<</if>>
+p1255
+sg23
+VFinal Climb
+p1256
+sg25
+g26
+((I2017
+I3
+I16
+I21
+I40
+I51
+I3
+I75
+I1
+tp1257
+(dp1258
+tp1259
+Rp1260
+sg31
+(lp1261
+sg33
+g26
+((I2017
+I2
+I4
+I22
+I5
+I53
+I5
+I35
+I0
+tp1262
+(dp1263
+tp1264
+Rp1265
+sbsa(dp1266
+g14
+I00
+sg15
+(lp1267
+F5297.42
+aF972.0040000000007
+asg17
+(itiddlywiki
+Tiddler
+p1268
+(dp1269
+g21
+V@@.shake;You arrive at the courtyard. You see that the entire tomb is falling apart. The gemstones that have once been embedded in the ceiling are now scattered on the floor.\u000a\u000a[[Run through to the stairs|Slip around][$timer to $timer + time() + 9000]]\u000a[[Carefully make your way to the stairs|Escape Hub][$timer to $timer + time()+ 3000]]@@
+p1270
+sg23
+VEscape Courtyard
+p1271
+sg25
+g26
+((I2017
+I3
+I12
+I22
+I20
+I30
+I6
+I71
+I1
+tp1272
+(dp1273
+tp1274
+Rp1275
+sg31
+(lp1276
+sg33
+g26
+((I2017
+I2
+I4
+I23
+I17
+I22
+I5
+I35
+I0
+tp1277
+(dp1278
+tp1279
+Rp1280
+sbsa(dp1281
+g14
+I00
+sg15
+(lp1282
+F5649.319999999994
+aF974.3500000000007
+asg17
+(itiddlywiki
+Tiddler
+p1283
+(dp1284
+g21
+V@@.shake;Making your way to the top of the stairs, you see the hallway leading to the entrance to the tomb. From this distance, you see that the gate has been opened.\u000a\u000a[[Run to the left passageway|Wrong turn][$timer to $timer + time()]]\u000a[[Run to the right passageway|Wrong turn][$timer to $timer + time()]]\u000a[[Run straight to the hallway][$timer to $timer + time()]]@@
+p1285
+sg23
+VEscape Hub
+p1286
+sg25
+g26
+((I2017
+I2
+I5
+I23
+I34
+I42
+I6
+I36
+I0
+tp1287
+(dp1288
+tp1289
+Rp1290
+sg31
+(lp1291
+sg33
+g26
+((I2017
+I2
+I4
+I23
+I47
+I0
+I5
+I35
+I0
+tp1292
+(dp1293
+tp1294
+Rp1295
+sbsa(dp1296
+g14
+I00
+sg15
+(lp1297
+F5498.416000000014
+aF1193.3540000000005
+asg17
+(itiddlywiki
+Tiddler
+p1298
+(dp1299
+g21
+V<<set $health to $health - 1>>\u000a@@.shake;You slip on the little gemstones lying on the floor. <<if $health gt 0>>You do not have any time to linger around, so you quickly get up and dash to the stairs.<br><br>\u000a\u000aYou've taken a light wound.<br><br>\u000a\u000aYou lost some time.<br><br>\u000a\u000a[[To the stairs|Escape Hub][$timer to $timer + time()]]\u000a<<else>>\u000aYou try to get up but you feel the strength leaving your feet. With the tomb collapsing around you, you feel that this is the end of your journey. <br><br>@@\u000a\u000a<center><h1>@@color:red;Dead End@@</h1></center>\u000a<</if>>
+p1300
+sg23
+VSlip around
+p1301
+sg25
+g26
+((I2017
+I2
+I5
+I23
+I34
+I26
+I6
+I36
+I0
+tp1302
+(dp1303
+tp1304
+Rp1305
+sg31
+(lp1306
+Vnobr
+p1307
+asg33
+g26
+((I2017
+I2
+I4
+I23
+I47
+I0
+I5
+I35
+I0
+tp1308
+(dp1309
+tp1310
+Rp1311
+sbsa(dp1312
+g14
+I00
+sg15
+(lp1313
+F6118.519999999974
+aF535.6479999999998
+asg17
+(itiddlywiki
+Tiddler
+p1314
+(dp1315
+g21
+V@@.shake;You do not have time to explore! You have to escape!\u000a\u000a[[Return|previous()][$timer to $timer + time()+1000]]@@
+p1316
+sg23
+VWrong turn
+p1317
+sg25
+g26
+((I2017
+I2
+I5
+I23
+I35
+I1
+I6
+I36
+I0
+tp1318
+(dp1319
+tp1320
+Rp1321
+sg31
+(lp1322
+sg33
+g26
+((I2017
+I2
+I4
+I23
+I59
+I59
+I5
+I35
+I0
+tp1323
+(dp1324
+tp1325
+Rp1326
+sbsa(dp1327
+g14
+I00
+sg15
+(lp1328
+F5902.607333333321
+aF971.6960000000006
+asg17
+(itiddlywiki
+Tiddler
+p1329
+(dp1330
+g21
+V@@.shake;You run straight to the exit.<br><br>\u000a\u000a<<if $timer gte 22000>>\u000aUnfortunately the exit has been obstructed by debris! It seems as though you were too slow. The only thing you can do now is wait for the tomb to collapse onto you. @@<br><br>\u000a\u000a[[Continue|Trapped End]]\u000a<<else>>\u000a[[Escape to the cave|Escape Cave][$timer to $timer + time()]]\u000a<</if>>\u000a<br><br><br>\u000a<a style="color:#111">As you dig around, you find that there is a hidden panel along the floor</a><br><br>\u000a<a style="color:#111" data-passage="Hidden Bad End"><u>Lift the panel</u></a>
+p1331
+sg23
+VRun straight to the hallway
+p1332
+sg25
+g26
+((I2017
+I3
+I16
+I21
+I52
+I35
+I3
+I75
+I1
+tp1333
+(dp1334
+tp1335
+Rp1336
+sg31
+(lp1337
+Vnobr
+p1338
+asg33
+g26
+((I2017
+I2
+I4
+I23
+I59
+I59
+I5
+I35
+I0
+tp1339
+(dp1340
+tp1341
+Rp1342
+sbsa(dp1343
+g14
+I00
+sg15
+(lp1344
+F6140.747999999998
+aF977.3753333333335
+asg17
+(itiddlywiki
+Tiddler
+p1345
+(dp1346
+g21
+V<div id="light"></div><div id="lightEdge"></div><div class="content">@@.shake;As you leave the tomb, the entrance collapses on itself. You have made it out of the tomb, but are not out of the clear yet. The entire cave is still falling apart. You need to escape and fast. You quickly flip on your flashlight and prepare to run.\u000a\u000a<a style="color:black" data-setter="$timer to $timer + time()" data-passage="Escape Lake"><u>Take the right passage</u></a>\u000a<a style="color:black" data-setter="$timer to $timer + time()" data-passage="Escape Spiral"><u>Take the left passage</u></a>@@</div>\u000a\u000a
+p1347
+sg23
+VEscape Cave
+p1348
+sg25
+g26
+((I2017
+I3
+I14
+I19
+I42
+I40
+I1
+I73
+I1
+tp1349
+(dp1350
+tp1351
+Rp1352
+sg31
+(lp1353
+Vcave
+p1354
+asg33
+g26
+((I2017
+I2
+I5
+I0
+I8
+I25
+I6
+I36
+I0
+tp1355
+(dp1356
+tp1357
+Rp1358
+sbsa(dp1359
+g14
+I00
+sg15
+(lp1360
+F6360.1579999999885
+aF779.6320000000002
+asg17
+(itiddlywiki
+Tiddler
+p1361
+(dp1362
+g21
+V<div id="light"></div><div id="lightEdge"></div><div class="content">@@.shake;You run up the spiraling passage. Not wanting to trip, you take it a bit slow as the scene around you rumbled. It was a bit slow, but you make it up.\u000a\u000aYou lost some time.\u000a\u000a<a style="color:black" data-setter="$timer to $timer + 7000 + time()" data-passage="Room Escape"><u>Continue ascending</u></a><br>@@\u000a</div>
+p1363
+sg23
+VEscape Spiral
+p1364
+sg25
+g26
+((I2017
+I3
+I14
+I19
+I42
+I46
+I1
+I73
+I1
+tp1365
+(dp1366
+tp1367
+Rp1368
+sg31
+(lp1369
+Vcave
+p1370
+asg33
+g26
+((I2017
+I2
+I5
+I0
+I18
+I53
+I6
+I36
+I0
+tp1371
+(dp1372
+tp1373
+Rp1374
+sbsa(dp1375
+g14
+I00
+sg15
+(lp1376
+F6365.756666666661
+aF1204.2580000000007
+asg17
+(itiddlywiki
+Tiddler
+p1377
+(dp1378
+g21
+V<div id="light"></div><div id="lightEdge"></div><div class="content">@@.shake;You arrive at the large lake of water.<br><br>\u000a\u000a<<if $ropeBasin is true>>\u000aThe rope that you hung down earlier is still over there. You are confident that it should hold, but it still might be dangerous.<br><br>\u000a\u000a<a style="color:black" data-setter="$timer to $timer + time()" data-passage="Lake Top Escape"><u>Climb the rope</u></a><br>\u000a<a style="color:black" data-setter="$timer to $timer + 4000 + time()" data-passage="Escape Spiral"><u>Run to the other passage</u></a>\u000a<<else>>\u000aThis is a dead end. You do not have time to stick around.<br><br>\u000a<a style="color:black" data-setter="$timer to $timer + 4000 + time()" data-passage="Escape Spiral"><u>Run to the other passage</u></a>\u000a<</if>>\u000a@@\u000a</div>
+p1379
+sg23
+VEscape Lake
+p1380
+sg25
+g26
+((I2017
+I3
+I14
+I19
+I42
+I49
+I1
+I73
+I1
+tp1381
+(dp1382
+tp1383
+Rp1384
+sg31
+(lp1385
+Vcave,
+p1386
+aVnobr
+p1387
+asg33
+g26
+((I2017
+I2
+I5
+I0
+I18
+I53
+I6
+I36
+I0
+tp1388
+(dp1389
+tp1390
+Rp1391
+sbsa(dp1392
+g14
+I00
+sg15
+(lp1393
+F6613.833999999987
+aF783.6446666666673
+asg17
+(itiddlywiki
+Tiddler
+p1394
+(dp1395
+g21
+V<div id="light"></div><div id="lightEdge"></div><div class="content">@@.shake;You are in the rest room. The cavern chamber is directly in your sights.\u000a\u000a<a style="color:black" data-setter="$timer to $timer + time()" data-passage="Escape Trap"><u>Run towards the cavern chamber</u></a>\u000a<a style="color:black" data-setter="$timer to $timer + time()" data-passage="Wrong turn"><u>Check the supply room</u></a><br>\u000a@@\u000a</div>
+p1396
+sg23
+VRoom Escape
+p1397
+sg25
+g26
+((I2017
+I3
+I14
+I19
+I42
+I57
+I1
+I73
+I1
+tp1398
+(dp1399
+tp1400
+Rp1401
+sg31
+(lp1402
+Vcave
+p1403
+asg33
+g26
+((I2017
+I2
+I5
+I0
+I22
+I47
+I6
+I36
+I0
+tp1404
+(dp1405
+tp1406
+Rp1407
+sbsa(dp1408
+g14
+I00
+sg15
+(lp1409
+F6608.833999999998
+aF1207.2833333333338
+asg17
+(itiddlywiki
+Tiddler
+p1410
+(dp1411
+g21
+V<div id="light"></div><div id="lightEdge"></div><div class="content">@@.shake;You make it to the top safely. You have arrived at the river. Following the stream should lead you back to the main chamber.\u000a\u000a<a style="color:black" data-setter="$timer to $timer + time()" data-passage="Landmark Escape"><u>Follow the water</u></a>@@</div>
+p1412
+sg23
+VLake Top Escape
+p1413
+sg25
+g26
+((I2017
+I3
+I14
+I19
+I42
+I53
+I1
+I73
+I1
+tp1414
+(dp1415
+tp1416
+Rp1417
+sg31
+(lp1418
+Vcave
+p1419
+asg33
+g26
+((I2017
+I2
+I5
+I0
+I29
+I43
+I6
+I36
+I0
+tp1420
+(dp1421
+tp1422
+Rp1423
+sbsa(dp1424
+g14
+I00
+sg15
+(lp1425
+F6898.264666666661
+aF995.2566666666668
+asg17
+(itiddlywiki
+Tiddler
+p1426
+(dp1427
+g21
+V@@.shake;You have made it to the central chamber. Light shines through from the entrance, but debris has obstructed most of the path.<br><br>\u000a<<set $sprint to 0>>\u000a<<link "Run<br><br>">>\u000a<<append "#lastsprint">> \u000a	<<set $sprint to $sprint + 1>>\u000a	<<if $sprint is 1>> Keep running. <br><br><</if>>\u000a	<<if $sprint is 10>> Faster.<br><br><</if>>\u000a	<<if $sprint is 15>> Even faster. <br><br><</if>>\u000a	<<if $sprint is 20>> As fast as possible.<br><br><</if>>\u000a	<<if $sprint is 25>> Faster than you thought possible. @@<br><br><</if>>\u000a	<<if $sprint is 30>> <<set $timer to $timer + time()>><<goto "Light">><</if>>\u000a<</append>>\u000a<</link>>\u000a<span id="lastsprint">Sprint towards the light. <br><br></span>\u000a\u000a
+p1428
+sg23
+VLandmark Escape
+p1429
+sg25
+g26
+((I2017
+I3
+I14
+I12
+I5
+I2
+I1
+I73
+I1
+tp1430
+(dp1431
+tp1432
+Rp1433
+sg31
+(lp1434
+Vnobr
+p1435
+aV,escape
+p1436
+asg33
+g26
+((I2017
+I2
+I5
+I0
+I30
+I26
+I6
+I36
+I0
+tp1437
+(dp1438
+tp1439
+Rp1440
+sbsa(dp1441
+g14
+I00
+sg15
+(lp1442
+F7291.632666666662
+aF966.2440000000004
+asg17
+(itiddlywiki
+Tiddler
+p1443
+(dp1444
+g21
+V<<if $timer gte 44444>>\u000a@@.shake;You ran as fast as your legs could carry you, but alas, it was not enough. The cave entrance collapses before your very eyes. There is nothing left you can do but accept that fact. @@<br><br>\u000a[[Close your eyes and wait|Trapped End 2]]\u000a<<else>>\u000aThe exit is right before your eyes. It is time to escape to the light of day.<br><br>\u000a[[Jump out of the cave|Escape End]]\u000a<</if>>
+p1445
+sg23
+VLight
+p1446
+sg25
+g26
+((I2017
+I2
+I5
+I19
+I11
+I11
+I6
+I36
+I0
+tp1447
+(dp1448
+tp1449
+Rp1450
+sg31
+(lp1451
+Vnobr
+p1452
+asg33
+g26
+((I2017
+I2
+I5
+I0
+I30
+I37
+I6
+I36
+I0
+tp1453
+(dp1454
+tp1455
+Rp1456
+sbsa(dp1457
+g14
+I00
+sg15
+(lp1458
+F7291.784666666665
+aF1196.9120000000003
+asg17
+(itiddlywiki
+Tiddler
+p1459
+(dp1460
+g21
+V@@.shake;You close your eyes and rest your back against the now sealed exit. You hear the walls crumble around you as everything collapses. It was an amazing journey up to now and you have no regrets. After that thought, the entire cave collapses in.@@\u000a\u000a<center><h1>@@color:red;Dead End@@</h1></center>
+p1461
+sg23
+VTrapped End 2
+p1462
+sg25
+g26
+((I2017
+I2
+I5
+I19
+I11
+I19
+I6
+I36
+I0
+tp1463
+(dp1464
+tp1465
+Rp1466
+sg31
+(lp1467
+sg33
+g26
+((I2017
+I2
+I5
+I1
+I11
+I8
+I6
+I36
+I0
+tp1468
+(dp1469
+tp1470
+Rp1471
+sbsa(dp1472
+g14
+I00
+sg15
+(lp1473
+F1004.3613333333327
+aF25.25333333333203
+asg17
+(itiddlywiki
+Tiddler
+p1474
+(dp1475
+g21
+V.telepathy {\u000a  display: inline-block;\u000a  -webkit-box-sizing: border-box;\u000a  -moz-box-sizing: border-box;\u000a  box-sizing: border-box;\u000a  padding: 10px;\u000a  border: none;\u000a  /*font: normal 48px/normal "Warnes", Helvetica, sans-serif;*/\u000a  color: rgba(255,255,255,1);\u000a  text-decoration: normal;\u000a  text-align: center;\u000a  -o-text-overflow: clip;\u000a  text-overflow: clip;\u000a  white-space: pre;\u000a  text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #ff00de , 0 0 70px #ff00de , 0 0 80px #ff00de , 0 0 100px #ff00de ;\u000a  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);\u000a  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);\u000a  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);\u000a  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);\u000a}\u000a\u000a.telepathy:hover {\u000a  text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #00ffff , 0 0 70px #00ffff , 0 0 80px #00ffff , 0 0 100px #00ffff ;\u000a}\u000a\u000a.shake {\u000a	display:inline-block\u000a}\u000a.shake {\u000a	display:block;\u000a	position:relative;\u000a}\u000aimg{\u000adisplay: block;\u000aheight: 250px;\u000awidth: 250px;\u000aborder-radius: 50% 50% 50% 50%;\u000a}\u000ah2.shake,\u000a.shake.inline {\u000a	display:inline-block\u000a}\u000ah1,p,h2{\u000a  color:#FFF;\u000a}\u000a@-webkit-keyframes spaceboots {\u000a	0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }\u000a	10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }\u000a	20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }\u000a	30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }\u000a	40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }\u000a	50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }\u000a	60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }\u000a	70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }\u000a	80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }\u000a	90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }\u000a	100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }\u000a}\u000a.shake,\u000a.shake:focus {\u000a	-webkit-animation-name: spaceboots;\u000a	-webkit-animation-duration: 0.8s;\u000a	-webkit-transform-origin:50% 50%;\u000a	-webkit-animation-iteration-count: infinite;\u000a	-webkit-animation-timing-function: linear;\u000a}
+p1476
+sg23
+Vpuzzle
+p1477
+sg25
+g26
+((I2017
+I3
+I11
+I12
+I26
+I58
+I5
+I70
+I0
+tp1478
+(dp1479
+tp1480
+Rp1481
+sg31
+(lp1482
+Vstylesheet
+p1483
+asg33
+g26
+((I2017
+I2
+I5
+I16
+I15
+I50
+I6
+I36
+I0
+tp1484
+(dp1485
+tp1486
+Rp1487
+sbsa(dp1488
+g14
+I00
+sg15
+(lp1489
+F546.6666666666666
+aF190.83333333333337
+asg17
+(itiddlywiki
+Tiddler
+p1490
+(dp1491
+g21
+V//requires jquery\u000a$(document).mousemove(function(event) {\u000a    $('#light').offset({\u000a        top: event.pageY - 75,\u000a        left: event.pageX - 75\u000a    });\u000a});\u000a\u000a$(document).mousemove(function(event) {\u000a    $('#lightEdge').offset({\u000a        top: event.pageY - 100,\u000a        left: event.pageX - 100\u000a    });\u000a});\u000a\u000a
+p1492
+sg23
+Vlight
+p1493
+sg25
+g26
+((I2017
+I3
+I14
+I19
+I38
+I11
+I1
+I73
+I1
+tp1494
+(dp1495
+tp1496
+Rp1497
+sg31
+(lp1498
+Vscript
+p1499
+asg33
+g26
+((I2017
+I3
+I6
+I7
+I9
+I2
+I0
+I65
+I0
+tp1500
+(dp1501
+tp1502
+Rp1503
+sbsa(dp1504
+g14
+I00
+sg15
+(lp1505
+F1166.0000000000005
+aF25.33333333333332
+asg17
+(itiddlywiki
+Tiddler
+p1506
+(dp1507
+g21
+Vbody.cave { \u000a	color: #000; \u000a	background-color: #000;\u000a	-webkit-user-select: none;\u000a	-khtml-user-select: none;\u000a	-moz-user-select: none;\u000a	-o-user-select: none;\u000a	user-select: none; \u000a}\u000a\u000anoWrap { white-space: nowrap; }\u000a\u000abody.escape {\u000a	-webkit-user-select: none;\u000a	-khtml-user-select: none;\u000a	-moz-user-select: none;\u000a	-o-user-select: none;\u000a	user-select: none;\u000a}\u000a\u000a#faded {opacity:0.2;}\u000a\u000acent {\u000a    left: 0;\u000a    line-height: 200px;\u000a    margin-top: -100px;\u000a    position: absolute;\u000a    text-align: center;\u000a    top: 50%;\u000a    width: 100%;\u000a}\u000a\u000a.content {\u000a    position: relative;\u000a    z-index: 10;\u000a}	\u000a\u000a.herb:hover{\u000a	color: #31B404;\u000a    text-decoration: underline;\u000a}\u000a\u000a#light {\u000a    top: 50%;\u000a    left: 50%;\u000a    width: 150px;\u000a    height: 150px;\u000a    border-radius: 50%;\u000a    position: absolute;\u000a    background-color: rgb(255, 255, 255);\u000a	opacity:0.2;\u000a}\u000a\u000a#lightEdge{\u000a    top: 50%;\u000a    left: 50%;\u000a    width: 200px;\u000a    height: 200px;\u000a    border-radius: 50%;\u000a    position: absolute;\u000a    background-color: rgb(255, 255, 255);\u000a	opacity:0.1;
+p1508
+sg23
+Vcave
+p1509
+sg25
+g26
+((I2017
+I3
+I16
+I21
+I10
+I47
+I3
+I75
+I1
+tp1510
+(dp1511
+tp1512
+Rp1513
+sg31
+(lp1514
+Vstylesheet
+p1515
+asg33
+g26
+((I2017
+I3
+I6
+I7
+I10
+I37
+I0
+I65
+I0
+tp1516
+(dp1517
+tp1518
+Rp1519
+sbsa(dp1520
+g14
+I00
+sg15
+(lp1521
+F402.3333333333336
+aF570.8333333333333
+asg17
+(itiddlywiki
+Tiddler
+p1522
+(dp1523
+g21
+V<div id="light"></div><div class="content">  TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest <br>\u000a<a style="color:black"><u><<mousegoto "Start">>Start<</mousegoto>></u></a>\u000a</div>
+p1524
+sg23
+Vtestpassage
+p1525
+sg25
+g26
+((I2017
+I3
+I11
+I21
+I11
+I37
+I5
+I70
+I0
+tp1526
+(dp1527
+tp1528
+Rp1529
+sg31
+(lp1530
+Vcave,
+p1531
+aVnobr
+p1532
+asg33
+g26
+((I2017
+I3
+I6
+I7
+I11
+I2
+I0
+I65
+I0
+tp1533
+(dp1534
+tp1535
+Rp1536
+sbsa(dp1537
+g14
+I00
+sg15
+(lp1538
+F1851.9999999999995
+aF1228.3333333333342
+asg17
+(itiddlywiki
+Tiddler
+p1539
+(dp1540
+g21
+VLifting the panel reveals stairs leading further down. This appears to be a passageway that was kept hidden on purpose. Who knows what could possibly be down here.\u000a\u000a[[Go down the staircase|Hidden passage]]\u000a[[Ignore it and return|Gate2]]\u000a
+p1541
+sg23
+VHidden
+p1542
+sg25
+g26
+((I2017
+I3
+I14
+I16
+I1
+I29
+I1
+I73
+I1
+tp1543
+(dp1544
+tp1545
+Rp1546
+sg31
+(lp1547
+sg33
+g26
+((I2017
+I3
+I11
+I14
+I49
+I54
+I5
+I70
+I0
+tp1548
+(dp1549
+tp1550
+Rp1551
+sbsa(dp1552
+g14
+I00
+sg15
+(lp1553
+F716.6666666666667
+aF188.3333333333333
+asg17
+(itiddlywiki
+Tiddler
+p1554
+(dp1555
+g21
+V//Credits to TheMadExile\u000aMacro.add('mousegoto', {\u000a	tags    : null,\u000a	handler : function () {\u000a		if (this.args.length === 0) {\u000a			return this.error('no passage specified');\u000a		}\u000a\u000a		var passage;\u000a\u000a		if (typeof this.args[0] === 'object') {\u000a			// Argument was in wiki link syntax.\u000a			passage = this.args[0].link;\u000a		}\u000a		else {\u000a			// Argument was simply the passage name.\u000a			passage = this.args[0];\u000a		}\u000a\u000a		if (!Story.has(passage)) {\u000a			return this.error('passage "' + passage + '" does not exist');\u000a		}\u000a\u000a		jQuery(document.createElement('span'))\u000a			.addClass('macro-' + this.name + ' ' + this.name)\u000a			.wiki(this.payload[0].contents)\u000a			.one('mouseover.macros', function () {\u000a				setTimeout(function () {\u000a					Engine.play(passage);\u000a				}, Engine.minDomActionDelay);\u000a			})\u000a			.appendTo(this.output);\u000a	}\u000a});
+p1556
+sg23
+Vhover
+p1557
+sg25
+g26
+((I2017
+I3
+I11
+I21
+I11
+I25
+I5
+I70
+I0
+tp1558
+(dp1559
+tp1560
+Rp1561
+sg31
+(lp1562
+Vscript
+p1563
+asg33
+g26
+((I2017
+I3
+I11
+I21
+I9
+I1
+I5
+I70
+I0
+tp1564
+(dp1565
+tp1566
+Rp1567
+sbsa(dp1568
+g14
+I00
+sg15
+(lp1569
+F1230.0
+aF975.0000000000002
+asg17
+(itiddlywiki
+Tiddler
+p1570
+(dp1571
+g21
+VIt would be best to avoid traps.\u000a\u000a[[Return|previous()]]
+p1572
+sg23
+Vtraps
+p1573
+sg25
+g26
+((I2017
+I3
+I11
+I21
+I22
+I39
+I5
+I70
+I0
+tp1574
+(dp1575
+tp1576
+Rp1577
+sg31
+(lp1578
+sg33
+g26
+((I2017
+I3
+I11
+I21
+I20
+I58
+I5
+I70
+I0
+tp1579
+(dp1580
+tp1581
+Rp1582
+sbsa(dp1583
+g14
+I00
+sg15
+(lp1584
+F1528.3333333333337
+aF1170.0000000000011
+asg17
+(itiddlywiki
+Tiddler
+p1585
+(dp1586
+g21
+VYou stepped on an arrow trap!<br><br><<set $health to $health - 2>><<audio arrow volume 0.25 fadein>>\u000a\u000aAn arrow flies out of the wall, striking your body and inflicting a moderate wound.<br><br>\u000a\u000a<<if $health lte 0>>\u000aNow bleeding out, you collapse onto the ground. Your adventure has ended here.<br><br>\u000a\u000a<center><h1>@@color:red;Dead End@@</h1></center>\u000a<<else>>\u000a[[Return|previous()]]\u000a<</if>>
+p1587
+sg23
+Varrow trap
+p1588
+sg25
+g26
+((I2017
+I3
+I14
+I18
+I46
+I59
+I1
+I73
+I1
+tp1589
+(dp1590
+tp1591
+Rp1592
+sg31
+(lp1593
+Vnobr
+p1594
+asg33
+g26
+((I2017
+I3
+I11
+I21
+I24
+I50
+I5
+I70
+I0
+tp1595
+(dp1596
+tp1597
+Rp1598
+sbsa(dp1599
+g14
+I00
+sg15
+(lp1600
+F802.0000000000002
+aF1165.000000000001
+asg17
+(itiddlywiki
+Tiddler
+p1601
+(dp1602
+g21
+V<div id="light"></div><div id="lightEdge"></div><div class="content">	\u000a<a style="color:black" data-passage="Landmark"><u>Return</u></a>\u000a<br><br>\u000aThis man-made passage appears to have numerous <<mousegoto "arrow trap">> trap <</mousegoto>> triggers all along the floor. You had better watch your step while navigating, lest you trigger a <<mousegoto "arrow trap">> trap <</mousegoto>>. Who knows how long ago this has been built, but it is always better to be cautious when handling <<mousegoto "arrow trap">> traps <</mousegoto>>. You could very well lose your life to a <<mousegoto "arrow trap">>trap <</mousegoto>> if you are not careful. After navigating through the <<mousegoto "arrow trap">> traps <</mousegoto>>, you see what appears to be a door.<<if $herbArrow is false>>Your flashlight catches <span class="herb"  data-passage="getHerbArrow">something</span> with its light. <</if>>It could possibly be <<mousegoto "arrow trap">> trapped <</mousegoto>>, but it is the only way forward.<br><br>\u000a\u000a<a style="color:black" data-passage="Human Room"><u>Continue through the door</u></a>\u000a</div></div>\u000a\u000a
+p1603
+sg23
+VHuman Passage
+p1604
+sg25
+g26
+((I2017
+I3
+I17
+I21
+I7
+I35
+I4
+I76
+I1
+tp1605
+(dp1606
+tp1607
+Rp1608
+sg31
+(lp1609
+Vcave,
+p1610
+aVnobr
+p1611
+asg33
+g26
+((I2017
+I3
+I11
+I22
+I30
+I12
+I5
+I70
+I0
+tp1612
+(dp1613
+tp1614
+Rp1615
+sbsa(dp1616
+g14
+I00
+sg15
+(lp1617
+F1193.0000000000014
+aF1171.6666666666663
+asg17
+(itiddlywiki
+Tiddler
+p1618
+(dp1619
+g21
+V<div id="light"></div><div id="lightEdge"></div><div class="content">	\u000a<a style="color:black" data-passage="Human Room"><u>Return</u></a>\u000a<br><br>\u000aThis man-made passage appears to have numerous <<mousegoto "arrow trap">> trap <</mousegoto>> triggers all along the floor. You had better watch your step while navigating, lest you trigger a <<mousegoto "arrow trap">> trap <</mousegoto>>. Who knows how long ago this has been built, but it is always better to be cautious when handling <<mousegoto "arrow trap">> traps <</mousegoto>>. You could very well lose your life to a <<mousegoto "arrow trap">>trap <</mousegoto>> if you are not careful. <<if $herbArrow is false>>Your flashlight catches <span class="herb"  data-passage="getHerbArrow">something</span> with its light. <</if>>As you make your way through the <<mousegoto "arrow trap">>traps<</mousegoto>>, you reach the central cavern once again.<br><br>\u000a\u000a<a style="color:black" data-passage="Landmark"><u>Continue to the central cavern</u></a>\u000a</div>
+p1620
+sg23
+VHuman Pass Return
+p1621
+sg25
+g26
+((I2017
+I3
+I17
+I21
+I8
+I16
+I4
+I76
+I1
+tp1622
+(dp1623
+tp1624
+Rp1625
+sg31
+(lp1626
+Vcave,
+p1627
+aVnobr
+p1628
+asg33
+g26
+((I2017
+I3
+I12
+I0
+I53
+I11
+I6
+I71
+I0
+tp1629
+(dp1630
+tp1631
+Rp1632
+sbsa(dp1633
+g14
+I00
+sg15
+(lp1634
+F6895.3333333333385
+aF790.0000000000007
+asg17
+(itiddlywiki
+Tiddler
+p1635
+(dp1636
+g21
+V<div id="light"></div><div id="lightEdge"></div><div class="content">@@.shake;This passageway is full of <<mousegoto "arrow trap">> traps. <</mousegoto>> Even if the entire system is collapsing, you must be cautious around <<mousegoto "arrow trap">> traps <</mousegoto>>, making sure that you do not activate any <<mousegoto "arrow trap">> traps <</mousegoto>>.\u000a\u000a<a style="color:black" data-setter="$timer to $timer + time()" data-passage="Landmark Escape"><u>Continue to the cavern chamber</u></a>\u000a\u000a@@</div>\u000a\u000a
+p1637
+sg23
+VEscape Trap
+p1638
+sg25
+g26
+((I2017
+I3
+I14
+I19
+I43
+I0
+I1
+I73
+I1
+tp1639
+(dp1640
+tp1641
+Rp1642
+sg31
+(lp1643
+Vcave
+p1644
+asg33
+g26
+((I2017
+I3
+I12
+I22
+I49
+I36
+I6
+I71
+I1
+tp1645
+(dp1646
+tp1647
+Rp1648
+sbsa(dp1649
+g14
+I00
+sg15
+(lp1650
+F2083.6666666666647
+aF1231.6666666666642
+asg17
+(itiddlywiki
+Tiddler
+p1651
+(dp1652
+g21
+VYou return to the gate hallway. Seeing as how the gate is closed, going to the chamber ahead is the only visible option.<br><br>\u000a\u000a[[Continue to the large chamber|Hub]]<br><br><br><br><br><br>\u000a\u000a@@color:#111;As you dig around, you find that there is a hidden panel along the floor.<br><br>\u000a\u000a<a style="color:#111" data-passage="Hidden"><u>Lift the panel</u></a>@@
+p1653
+sg23
+VGate2
+p1654
+sg25
+g26
+((I2017
+I3
+I16
+I20
+I40
+I20
+I3
+I75
+I1
+tp1655
+(dp1656
+tp1657
+Rp1658
+sg31
+(lp1659
+Vnobr
+p1660
+asg33
+g26
+((I2017
+I3
+I14
+I12
+I11
+I15
+I1
+I73
+I1
+tp1661
+(dp1662
+tp1663
+Rp1664
+sbsa(dp1665
+g14
+I00
+sg15
+(lp1666
+F1850.3333333333328
+aF1446.6666666666658
+asg17
+(itiddlywiki
+Tiddler
+p1667
+(dp1668
+g21
+VDescending down the endless stairs of stone, you reach a wide, linear corridor. Along the sides of the walls are stone soldiers, with each pair facing each other. Within the grasp of each statue is a torch, held in a way as if it were guiding you somewhere. Sure enough, at the end of the hallway is a single stone statue that is distinguishable from the rest. This statue bears a certain elegance to it that signals that it is of royalty. The room echos as the statue begins to speak to you. <br><br>\u000a<<if $takenQuiz is false>>\u000a<center>"A mortal trespassing in this domain? Interesting. You are the first of the living to arrive here since this tomb was built. To commemorate this occassion, I offer you a challenge. Answer all of my questions correctly and you shall be rewarded so. You will only have but one opportunity. </center><br><br>\u000a\u000a[[Accept the challenge|Quiz1][$takenQuiz to true]]<br>\u000a<<else>>\u000a<center>"I have nothing more to say to you."</center><br>\u000a<</if>>\u000a[[Return to the main hallway|Gate2]]\u000a
+p1669
+sg23
+VHidden passage
+p1670
+sg25
+g26
+((I2017
+I3
+I14
+I18
+I3
+I23
+I1
+I73
+I1
+tp1671
+(dp1672
+tp1673
+Rp1674
+sg31
+(lp1675
+Vnobr
+p1676
+asg33
+g26
+((I2017
+I3
+I14
+I12
+I19
+I42
+I1
+I73
+I1
+tp1677
+(dp1678
+tp1679
+Rp1680
+sbsa(dp1681
+g14
+I00
+sg15
+(lp1682
+F1711.9999999999998
+aF1611.6666666666663
+asg17
+(itiddlywiki
+Tiddler
+p1683
+(dp1684
+g21
+V<center> "When was this tomb erected?"</center>\u000a\u000a[[215 BC|Quiz2][$wrongAnswer to true]]\u000a[[2017 AD|Quiz2]]\u000a[[1342 BC|Quiz2][$wrongAnswer to true]]\u000a[[520 AD|Quiz2][$wrongAnswer to true]]\u000a
+p1685
+sg23
+VQuiz1
+p1686
+sg25
+g26
+((I2017
+I3
+I14
+I18
+I3
+I53
+I1
+I73
+I1
+tp1687
+(dp1688
+tp1689
+Rp1690
+sg31
+(lp1691
+sg33
+g26
+((I2017
+I3
+I14
+I16
+I31
+I21
+I1
+I73
+I1
+tp1692
+(dp1693
+tp1694
+Rp1695
+sbsa(dp1696
+g14
+I00
+sg15
+(lp1697
+F1706.9999999999995
+aF1804.9999999999995
+asg17
+(itiddlywiki
+Tiddler
+p1698
+(dp1699
+g21
+V<center> "Being a person of power, I have had many detractors and many attempts have been made upon my life. How many have tried to remove me from existence?"</center>\u000a\u000a[[One|Quiz3]]\u000a[[Dozens|Quiz3][$wrongAnswer to true]]\u000a[[Hundreds|Quiz3][$wrongAnswer to true]]\u000a[[Thousands|Quiz3][$wrongAnswer to true]]
+p1700
+sg23
+VQuiz2
+p1701
+sg25
+g26
+((I2017
+I3
+I14
+I17
+I0
+I57
+I1
+I73
+I1
+tp1702
+(dp1703
+tp1704
+Rp1705
+sg31
+(lp1706
+sg33
+g26
+((I2017
+I3
+I14
+I16
+I42
+I6
+I1
+I73
+I1
+tp1707
+(dp1708
+tp1709
+Rp1710
+sbsa(dp1711
+g14
+I00
+sg15
+(lp1712
+F1706.9999999999993
+aF2023.3333333333344
+asg17
+(itiddlywiki
+Tiddler
+p1713
+(dp1714
+g21
+V<center> "In the end, what was my cause of death?" </center>\u000a\u000a[[Natural death to the cruel mistress of time|Quiz4]]\u000a[[Murdered by my once loyal subjects|Quiz4][$wrongAnswer to true]]\u000a[[Ingestion of mercury as medication|Quiz4][$wrongAnswer to true]]\u000a[[Dying as a hero in combat|Quiz4][$wrongAnswer to true]]
+p1715
+sg23
+VQuiz3
+p1716
+sg25
+g26
+((I2017
+I3
+I14
+I17
+I21
+I0
+I1
+I73
+I1
+tp1717
+(dp1718
+tp1719
+Rp1720
+sg31
+(lp1721
+sg33
+g26
+((I2017
+I3
+I14
+I16
+I58
+I40
+I1
+I73
+I1
+tp1722
+(dp1723
+tp1724
+Rp1725
+sbsa(dp1726
+g14
+I00
+sg15
+(lp1727
+F1708.6666666666667
+aF2226.6666666666656
+asg17
+(itiddlywiki
+Tiddler
+p1728
+(dp1729
+g21
+V<center> "There is a powerful artifact sealed within this tomb. What is it for?" </center>\u000a\u000a[[All-encompassing mysticism|Quiz5][$wrongAnswer to true]]\u000a[[Manipulation of abstract souls|Quiz5]]\u000a[[Simply an object of decoration|Quiz5][$wrongAnswer to true]]\u000a[[Granting eternal life and life to the lifeless|Quiz5][$wrongAnswer to true]]
+p1730
+sg23
+VQuiz4
+p1731
+sg25
+g26
+((I2017
+I3
+I14
+I20
+I34
+I54
+I1
+I73
+I1
+tp1732
+(dp1733
+tp1734
+Rp1735
+sg31
+(lp1736
+sg33
+g26
+((I2017
+I3
+I14
+I17
+I14
+I0
+I1
+I73
+I1
+tp1737
+(dp1738
+tp1739
+Rp1740
+sbsa(dp1741
+g14
+I00
+sg15
+(lp1742
+F1946.9999999999995
+aF2224.9999999999995
+asg17
+(itiddlywiki
+Tiddler
+p1743
+(dp1744
+g21
+V<center> "Who am I?" </center>\u000a<<set $finalAnswer to true>><<updatebar>>\u000a[[Qin Shi Huang|Quiz6][$wrongAnswer to true]]\u000a[[Augustus|Quiz6][$wrongAnswer to true]]\u000a[[Genghis Khan|Quiz6][$wrongAnswer to true]]\u000a[[Alexander|Quiz6][$wrongAnswer to true]]
+p1745
+sg23
+VQuiz5
+p1746
+sg25
+g26
+((I2017
+I3
+I14
+I17
+I36
+I16
+I1
+I73
+I1
+tp1747
+(dp1748
+tp1749
+Rp1750
+sg31
+(lp1751
+sg33
+g26
+((I2017
+I3
+I14
+I17
+I17
+I27
+I1
+I73
+I1
+tp1752
+(dp1753
+tp1754
+Rp1755
+sbsa(dp1756
+g14
+I00
+sg15
+(lp1757
+F2078.666666666668
+aF2031.6666666666658
+asg17
+(itiddlywiki
+Tiddler
+p1758
+(dp1759
+g21
+V<<set $finalAnswer to false>><<updatebar>>\u000a<<if $wrongAnswer is true>>\u000a<center>"Unfortunately, you have made some incorrect choices. I have nothing more to offer you."</center><br><br>\u000a\u000a[[Return|Gate2]] <br><br>\u000aHighlight to reveal hints:\u000a\u000a@@color:#111;<br>1) What year was this made? <br>\u000a2) How many authors developed this? <br>\u000a3) Live long and prosper <br>\u000a4) The Orb powers all puzzles in this dungeon <br>\u000a5) He is The Lost King <br> <br> @@\u000a\u000a<<else>>\u000a<center>"Congratulations, you have answered every question correctly. I will ask one more question, however. How many times have you attempted this challenge?"</center><br><br>\u000a\u000a[[Finished on the first try|Liar]]<br>\u000a[[Several attempts were made|Truth]]<br>\u000a[[Too many to count|Truth]]<br>\u000a[[Relied on hints|Truth]]\u000a<</if>>
+p1760
+sg23
+VQuiz6
+p1761
+sg25
+g26
+((I2017
+I3
+I16
+I22
+I45
+I39
+I3
+I75
+I1
+tp1762
+(dp1763
+tp1764
+Rp1765
+sg31
+(lp1766
+Vnobr
+p1767
+asg33
+g26
+((I2017
+I3
+I14
+I17
+I27
+I15
+I1
+I73
+I1
+tp1768
+(dp1769
+tp1770
+Rp1771
+sbsa(dp1772
+g14
+I00
+sg15
+(lp1773
+F563.3333333333333
+aF19.999999999999996
+asg17
+(itiddlywiki
+Tiddler
+p1774
+(dp1775
+g21
+V<<widget "updatebar">><<silently>>\u000a<<replace "#story-title">><<display "StoryTitle">><</replace>>\u000a<</silently>><</widget>>
+p1776
+sg23
+VupdateTitle
+p1777
+sg25
+g26
+((I2017
+I3
+I14
+I17
+I32
+I46
+I1
+I73
+I1
+tp1778
+(dp1779
+tp1780
+Rp1781
+sg31
+(lp1782
+Vwidget
+p1783
+asg33
+g26
+((I2017
+I3
+I14
+I17
+I32
+I6
+I1
+I73
+I1
+tp1784
+(dp1785
+tp1786
+Rp1787
+sbsa(dp1788
+g14
+I00
+sg15
+(lp1789
+F2293.666666666666
+aF2280.0
+asg17
+(itiddlywiki
+Tiddler
+p1790
+(dp1791
+g21
+V<center>"That is impossible. I do not condone lying and will not reward a liar. The exit will now be sealed and you will be trapped here until you die."</center>\u000a\u000a<center><h1>@@color:red;Dirty Liar End@@</h1></center>
+p1792
+sg23
+VLiar
+p1793
+sg25
+g26
+((I2017
+I3
+I14
+I19
+I44
+I23
+I1
+I73
+I1
+tp1794
+(dp1795
+tp1796
+Rp1797
+sg31
+(lp1798
+sg33
+g26
+((I2017
+I3
+I14
+I17
+I45
+I20
+I1
+I73
+I1
+tp1799
+(dp1800
+tp1801
+Rp1802
+sbsa(dp1803
+g14
+I00
+sg15
+(lp1804
+F2355.3333333333358
+aF2026.6666666666695
+asg17
+(itiddlywiki
+Tiddler
+p1805
+(dp1806
+g21
+V<center>"While I did say that you would be given one chance, many of the answers were fictional. I appreciate honesty, so I will grant your promised reward. Use it as you wish. Now, return to your plundering of my tomb."</center>\u000a<<set $inv.push("King's Talisman")>>\u000aKing's Talisman has been added to your inventory.\u000a\u000a[[Return|Gate2]]
+p1807
+sg23
+VTruth
+p1808
+sg25
+g26
+((I2017
+I3
+I14
+I17
+I58
+I55
+I1
+I73
+I1
+tp1809
+(dp1810
+tp1811
+Rp1812
+sg31
+(lp1813
+sg33
+g26
+((I2017
+I3
+I14
+I17
+I45
+I20
+I1
+I73
+I1
+tp1814
+(dp1815
+tp1816
+Rp1817
+sbsa(dp1818
+g14
+I00
+sg15
+(lp1819
+F380.3333333333332
+aF355.3333333333333
+asg17
+(itiddlywiki
+Tiddler
+p1820
+(dp1821
+g21
+VYou used the water in your canteen to clean the grim off the plate.\u000aThe dirt washes off, revealing the etching of a tiger.\u000aSomething about this plate feels odd.\u000a\u000a<<nobr>>\u000a<<link "Return">>\u000a	<<script>>\u000a		Dialog.setup("Inventory", "inv");\u000a		Dialog.wiki(Story.get("Inventory").processText());\u000a		Dialog.open();\u000a	<</script>>\u000a<</link>>\u000a<<set $inv.remove("Water Canteen")>>\u000a<<set $inv.push("Empty Canteen")>>\u000a<<set $inv.remove("Dirty Stone Plate")>>\u000a<<set $inv.push("White Tiger Plate")>>\u000a<</nobr>>
+p1822
+sg23
+VCleanTiger
+p1823
+sg25
+g26
+((I2017
+I3
+I14
+I18
+I21
+I43
+I1
+I73
+I1
+tp1824
+(dp1825
+tp1826
+Rp1827
+sg31
+(lp1828
+sg33
+g26
+((I2017
+I3
+I14
+I18
+I11
+I2
+I1
+I73
+I1
+tp1829
+(dp1830
+tp1831
+Rp1832
+sbsa(dp1833
+g14
+I00
+sg15
+(lp1834
+F1326.6666666666683
+aF26.666666666666714
+asg17
+(itiddlywiki
+Tiddler
+p1835
+(dp1836
+g21
+V.pos1\u000a{\u000a	position:relative;\u000a	width: 25px;\u000a	height: 25px;\u000a	top: 100px;\u000a	left: 250px;\u000a	transform: rotate(134deg);\u000a}\u000a\u000a.pos2\u000a{\u000a	position:relative;\u000a	width: 25px;\u000a	height: 25px;\u000a	top: 250px;\u000a	left:250px;\u000a	transform: rotate(23deg);\u000a}\u000a\u000a.pos3\u000a{\u000a	position:relative;\u000a	width: 25px;\u000a	height: 25px;\u000a	top: 120px;\u000a	left: 250px;\u000a	transform: rotate(6deg);\u000a}\u000a\u000a.pos4\u000a{\u000a	position:relative;\u000a	width: 25px;\u000a	height: 25px;\u000a	top:180px;\u000a	left:680px;\u000a	transform: rotate(180deg);\u000a}\u000a\u000a.pos5\u000a{\u000a	position:relative;\u000a	width: 25px;\u000a	height: 25px;\u000a	left:20px;\u000a	transform: rotate(90deg);\u000a}\u000a.pos6\u000a{\u000a	position:relative;\u000a	width: 25px;\u000a	height: 25px;\u000a	left:450px;\u000a}\u000a.pos7\u000a{\u000a	position:relative;\u000a	width: 25px;\u000a	height: 25px;\u000a	top: 200px;\u000a	left:480px;\u000a	transform:rotate(300deg);\u000a}\u000a.pos8\u000a{\u000a	position:relative;\u000a	left:30px;\u000a}\u000a.pos9\u000a{\u000a	position:relative;\u000a	left:30px;\u000a}
+p1837
+sg23
+Vpositions
+p1838
+sg25
+g26
+((I2017
+I3
+I14
+I19
+I35
+I12
+I1
+I73
+I1
+tp1839
+(dp1840
+tp1841
+Rp1842
+sg31
+(lp1843
+Vstylesheet
+p1844
+asg33
+g26
+((I2017
+I3
+I14
+I18
+I33
+I6
+I1
+I73
+I1
+tp1845
+(dp1846
+tp1847
+Rp1848
+sbsa(dp1849
+g14
+I00
+sg15
+(lp1850
+F873.3333333333328
+aF24.99999999999982
+asg17
+(itiddlywiki
+Tiddler
+p1851
+(dp1852
+g21
+V<<widget "updatehp">><<silently>>\u000a<<replace "#story-caption">><<display "StoryCaption">><</replace>>\u000a<</silently>><</widget>>
+p1853
+sg23
+VupdateHealth
+p1854
+sg25
+g26
+((I2017
+I3
+I14
+I18
+I45
+I31
+I1
+I73
+I1
+tp1855
+(dp1856
+tp1857
+Rp1858
+sg31
+(lp1859
+Vwidget
+p1860
+asg33
+g26
+((I2017
+I3
+I14
+I18
+I44
+I31
+I1
+I73
+I1
+tp1861
+(dp1862
+tp1863
+Rp1864
+sbsa(dp1865
+g14
+I00
+sg15
+(lp1866
+F566.9999999999998
+aF1236.6666666666652
+asg17
+(itiddlywiki
+Tiddler
+p1867
+(dp1868
+g21
+VUnfortunately, through usage and time, this tool is not very useful.\u000a\u000a[[Return|previous()]]
+p1869
+sg23
+VBroken
+p1870
+sg25
+g26
+((I2017
+I3
+I14
+I19
+I30
+I47
+I1
+I73
+I1
+tp1871
+(dp1872
+tp1873
+Rp1874
+sg31
+(lp1875
+sg33
+g26
+((I2017
+I3
+I14
+I19
+I3
+I45
+I1
+I73
+I1
+tp1876
+(dp1877
+tp1878
+Rp1879
+sbsa(dp1880
+g14
+I00
+sg15
+(lp1881
+F558.666666666667
+aF1568.333333333332
+asg17
+(itiddlywiki
+Tiddler
+p1882
+(dp1883
+g21
+V<<set $ropeGet to true>>\u000a<<set $inv.push("Rope")>>\u000aDespite its age, this rope is in surprisingly good condition. You decide to take it with you.<br><br>\u000a\u000aRope has been added to inventory.<br><br>\u000a\u000a[[Return|previous()]]
+p1884
+sg23
+VRopeGet
+p1885
+sg25
+g26
+((I2017
+I3
+I14
+I19
+I31
+I31
+I1
+I73
+I1
+tp1886
+(dp1887
+tp1888
+Rp1889
+sg31
+(lp1890
+Vnobr
+p1891
+asg33
+g26
+((I2017
+I3
+I14
+I19
+I26
+I54
+I1
+I73
+I1
+tp1892
+(dp1893
+tp1894
+Rp1895
+sbsa(dp1896
+g14
+I00
+sg15
+(lp1897
+F991.9999999999998
+aF316.6666666666666
+asg17
+(itiddlywiki
+Tiddler
+p1898
+(dp1899
+g21
+V<div id="light"></div><div id="lightEdge"></div><div class="content">Your flashlight's gaze reflects off the leaves of some plants that are strangely growing on the rock floor. Recognizing them as medicinal herbs, you pick them and take them with you.\u000a<<set $gotHerb to true>>\u000aHerb have been added to your inventory. <<set $inv.push("Herb")>>\u000a\u000a<a style="color:black" data-passage="Herb"><u>Return</u></a>\u000a</div>
+p1900
+sg23
+VgetHerb
+p1901
+sg25
+g26
+((I2017
+I3
+I16
+I20
+I38
+I59
+I3
+I75
+I1
+tp1902
+(dp1903
+tp1904
+Rp1905
+sg31
+(lp1906
+Vcave
+p1907
+asg33
+g26
+((I2017
+I3
+I16
+I20
+I31
+I36
+I3
+I75
+I1
+tp1908
+(dp1909
+tp1910
+Rp1911
+sbsa(dp1912
+g14
+I00
+sg15
+(lp1913
+F4813.666666666667
+aF750.0
+asg17
+(itiddlywiki
+Tiddler
+p1914
+(dp1915
+g21
+VAs you walk into the final chamber, you feel a bit overwhemed by how lavish it is. The room is lined with carvings of various animals, including the tortoise, tiger, dragon, and phoenix that you have encountered earlier. In the back, you see what appears to be a coffin. In the middle of the room lies a floating metallic orb. A voice resonates within your mind.\u000a\u000a<center>@@.telepathy;"We meet once again, mortal worthy of the talisman. The choice belongs to you, to use the talisman or to take your righteous prize."@@ </center>\u000a\u000aUpon hearing those words, you walk up to the orb. The spiraling mass of yellow metallic liquid was quite strange. It was clearly reflective like a metal, spiraled like a liquid, but it held the physical shape of a ball that you can touch. Its nature can only be described as magical. You do not doubt that the source of all of the supernatural things happening. It would not surprise you if the will collapse if you take it.\u000a\u000aThe talisman, on the other hand, is a completely unknown factor. It was given to you by the statue in the hidden passageway. Seeing as how this voice recognized you and that there were only three statues in the central chamber, it is safe to assume that the talisman was given to you by none other than the king himself. There is a socket \u000a\u000a[[Activate the talisman]]\u000a[[Take the orb]]
+p1916
+sg23
+VAltChamber
+p1917
+sg25
+g26
+((I2017
+I3
+I16
+I22
+I16
+I38
+I3
+I75
+I1
+tp1918
+(dp1919
+tp1920
+Rp1921
+sg31
+(lp1922
+sg33
+g26
+((I2017
+I3
+I16
+I21
+I40
+I54
+I3
+I75
+I1
+tp1923
+(dp1924
+tp1925
+Rp1926
+sbsa(dp1927
+g14
+I00
+sg15
+(lp1928
+F5062.416666666678
+aF613.7499999999993
+asg17
+(itiddlywiki
+Tiddler
+p1929
+(dp1930
+g21
+VConsidering what the tomb as been like so far, maybe it is not the best idea to trust something so dubious and susupicious given to you by such a prankster. Are you sure you want to activate the talisman?\u000a\u000a[[Activate the talisman|ActivateBadEnd]]\u000a[[Take the orb]]
+p1931
+sg23
+VActivate the talisman
+p1932
+sg25
+g26
+((I2017
+I3
+I16
+I22
+I10
+I45
+I3
+I75
+I1
+tp1933
+(dp1934
+tp1935
+Rp1936
+sg31
+(lp1937
+sg33
+g26
+((I2017
+I3
+I16
+I21
+I46
+I19
+I3
+I75
+I1
+tp1938
+(dp1939
+tp1940
+Rp1941
+sbsa(dp1942
+g14
+I00
+sg15
+(lp1943
+F6026.999999999998
+aF1203.333333333332
+asg17
+(itiddlywiki
+Tiddler
+p1944
+(dp1945
+g21
+V@@.shake; You lift the panel and head down the stairs, you can hear the rest of the tomb collapsing around you. Whatever was down here was not worth investigating as now you are trapped, waiting for your fate as the structure collapses around you.@@\u000a\u000a<center><h1>@@color:red;Curiousity Killed The Cat End@@</h1></center>
+p1946
+sg23
+VHidden Bad End
+p1947
+sg25
+g26
+((I2017
+I3
+I16
+I21
+I55
+I18
+I3
+I75
+I1
+tp1948
+(dp1949
+tp1950
+Rp1951
+sg31
+(lp1952
+sg33
+g26
+((I2017
+I3
+I16
+I21
+I48
+I23
+I3
+I75
+I1
+tp1953
+(dp1954
+tp1955
+Rp1956
+sbsa(dp1957
+g14
+I00
+sg15
+(lp1958
+F5311.583333333334
+aF612.4999999999995
+asg17
+(itiddlywiki
+Tiddler
+p1959
+(dp1960
+g21
+VUpon activation of the talisman, the metallic liquid orb starts to react quickly and violently. Recalling that this orb was supposed to be able to manipulate abstract souls, maybe it is a cause of worry. <<set $termTimer to 10>>\u000a\u000a<center>@@.telepathy;"I was once a king, now lost to the annals of time. I will now be claiming your body and re-establishing my kingdom."@@</center>\u000aUpon hearing these words, the orb violently strikes your chest, merging itself with you. Your consciousness begins to fade as you feel your body being taken over by another force. Soon, you will not exist and will be removed from this world.\u000a\u000a<center><h1>@@color:red;Hostile Takeover End@@</h1></center>\u000a<center><h1>@@color:red;Terminating in <span id ="timer"><<print $termTimer>></span>@@</h1></center>\u000a\u000a<<silently>>\u000a	<<repeat 1s>>\u000a		<<set $termTimer to $termTimer - 1>>\u000a		<<if $termTimer gte 0>>\u000a			<<replace "#timer">>$termTimer<</replace>>\u000a		<<else>>\u000a			<<script>>\u000a				window.close();\u000a			<</script>>\u000a		<</if>>\u000a	<</repeat>>\u000a<</silently>>
+p1961
+sg23
+VActivateBadEnd
+p1962
+sg25
+g26
+((I2017
+I3
+I16
+I22
+I32
+I19
+I3
+I75
+I1
+tp1963
+(dp1964
+tp1965
+Rp1966
+sg31
+(lp1967
+sg33
+g26
+((I2017
+I3
+I16
+I22
+I10
+I50
+I3
+I75
+I1
+tp1968
+(dp1969
+tp1970
+Rp1971
+sbsa(dp1972
+g14
+I01
+sg15
+(lp1973
+F993.6666666666671
+aF1168.333333333333
+asg17
+(itiddlywiki
+Tiddler
+p1974
+(dp1975
+g21
+V<div id="light"></div><div id="lightEdge"></div><div class="content">Your flashlight's gaze reflects off the leaves of some plants that are strangely growing on the rock floor. Recognizing them as medicinal herbs, you pick them and take them with you.\u000a<<set $herbArrow to true>>\u000aHerb have been added to your inventory. <<set $inv.push("Herb")>>\u000a\u000a<a style="color:black" data-passage="previous()"><u>Return</u></a>\u000a</div>
+p1976
+sg23
+VgetHerbArrow
+p1977
+sg25
+g26
+((I2017
+I3
+I17
+I21
+I10
+I30
+I4
+I76
+I1
+tp1978
+(dp1979
+tp1980
+Rp1981
+sg31
+(lp1982
+Vcave
+p1983
+asg33
+g26
+((I2017
+I3
+I17
+I21
+I6
+I9
+I4
+I76
+I1
+tp1984
+(dp1985
+tp1986
+Rp1987
+sbsasS'scale'
+p1988
+F0.6000000000000001
+sS'snapping'
+p1989
+I00
+ss.
